@@ -1,0 +1,20 @@
+{% extends "base_registered_subject_dashboard.html"%}
+{% load common_tags %}
+{% load crypto_tags %}
+
+{% block clinic_dashboard_marquee %}
+<table>
+<tr style="background:lightyellow;">
+    <td nowrap><B>Name:</B> {{registered_subject.first_name|encrypted }} {{registered_subject.last_name|encrypted }} ({{ registered_subject.initials }}) <i>{{registered_subject.gender|gender }}</i></td> 
+    <td nowrap><B>Identifier:</B> {% if subject_consent.subject_identifier %}{{subject_consent.subject_identifier }}{%else%}{{registered_subject.subject_identifier }}{% endif %}</td>
+    <td nowrap><B>{%if subject_consent.identity_type%}{{subject_consent.identity_type|capfirst }}{%else%}{{registered_subject.identity_type|capfirst}}{%endif%}:</B> {%if subject_consent.identity%}{{subject_consent.identity|encrypted}}{%else%}{{registered_subject.identity|encrypted}}{%endif%}</td>      
+    <td nowrap><B>Born:</B> {%if subject_consent.dob%}{{subject_consent.dob|date:"Y-m-d" }}({{subject_consent.dob|age }}){%else%}{{registered_subject.dob|date:"Y-m-d"}}({{registered_subject.dob|age}}){%endif%}</td>
+    <td nowrap><B>Consented:</B> {{subject_consent.consent_datetime|date:"Y-m-d H:i" }}</td>
+    <td colspan=1><B>HIV:</B>{%if symptoms_and_testing%}{{symptoms_and_testing}} {%else%}<i> not tested</i> {%endif%} </td>
+
+</tr>
+<tr style="background:lightgreen;" >
+    <td nowrap><B>paper document:</B> {%if cancer_diagnosis.paper_documents%}{{cancer_diagnosis.paper_documents}}{%else%}<i>none stored</i>{%endif%}</td>      
+</tr>
+</table>
+{% endblock %}

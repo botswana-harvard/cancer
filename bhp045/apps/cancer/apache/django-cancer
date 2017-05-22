@@ -1,0 +1,38 @@
+<VirtualHost *:8045>
+
+        #Redirect / http://192.168.1.50/offline.html?
+
+        ServerAdmin webmaster@localhost
+
+        ErrorLog /var/log/apache2/django-cancer-error.log
+
+        LogLevel warn
+
+        CustomLog /var/log/apache2/django-cancer-access.log combined
+
+        Alias /media/ /home/django/source/bhp045/media/
+        <Directory "/home/django/source/bhp045/media/" >
+          Order deny,allow
+          Allow from all
+        </Directory>
+
+        Alias /sitestatic/ /home/django/source/bhp045/sitestatic/
+        <Directory "/home/django/source/bhp045/sitestatic/" >
+          Order deny,allow
+          Allow from all
+        </Directory>
+
+        Alias /static/ /home/django/source/bhp045/static/
+        <Directory "/home/django/source/bhp045/static/" >
+          Order deny,allow
+          Allow from all
+        </Directory>
+
+        WSGIScriptAlias / /home/django/source/bhp045/apache/django.wsgi
+
+        <Directory "/home/django/source/bhp045/apache/" >
+          Order deny,allow
+          Allow from all
+        </Directory>
+
+</VirtualHost>

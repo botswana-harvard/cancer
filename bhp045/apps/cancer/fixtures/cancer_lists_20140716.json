@@ -1,0 +1,121 @@
+[
+  {
+    "pk": 1,
+    "model": "cancer_list.whoillness",
+    "fields": {
+      "hostname_created": "s007",
+      "name": "Wasting",
+      "short_name": "wasting",
+      "created": "2012-11-07T12:24:48",
+      "user_modified": "",
+      "modified": "2012-11-07T12:24:48",
+      "hostname_modified": "s007",
+      "version": "1.0",
+      "display_index": 0,
+      "user_created": "mkewagamang",
+      "field_name": null
+    }
+  },
+  {
+    "pk": 2,
+    "model": "cancer_list.whoillness",
+    "fields": {
+      "hostname_created": "s007",
+      "name": " Tuberculosis",
+      "short_name": "TB",
+      "created": "2012-11-07T12:25:08",
+      "user_modified": "",
+      "modified": "2012-11-07T12:25:08",
+      "hostname_modified": "s007",
+      "version": "1.0",
+      "display_index": 1,
+      "user_created": "mkewagamang",
+      "field_name": null
+    }
+  },
+  {
+    "pk": 3,
+    "model": "cancer_list.whoillness",
+    "fields": {
+      "hostname_created": "s007",
+      "name": "Kaposi's sarcoma",
+      "short_name": "Kaposi's sarcoma",
+      "created": "2012-11-07T12:25:24",
+      "user_modified": "",
+      "modified": "2012-11-07T12:25:24",
+      "hostname_modified": "s007",
+      "version": "1.0",
+      "display_index": 2,
+      "user_created": "mkewagamang",
+      "field_name": null
+    }
+  },
+  {
+    "pk": 4,
+    "model": "cancer_list.whoillness",
+    "fields": {
+      "hostname_created": "s007",
+      "name": "Kidney failure",
+      "short_name": "Kidney failure",
+      "created": "2012-11-07T12:25:42",
+      "user_modified": "",
+      "modified": "2012-11-07T12:25:42",
+      "hostname_modified": "s007",
+      "version": "1.0",
+      "display_index": 3,
+      "user_created": "mkewagamang",
+      "field_name": null
+    }
+  },
+  {
+    "pk": 5,
+    "model": "cancer_list.whoillness",
+    "fields": {
+      "hostname_created": "s007",
+      "name": "Cryptococcal meningitis",
+      "short_name": "Cryptococcal meningitis",
+      "created": "2012-11-07T12:25:58",
+      "user_modified": "",
+      "modified": "2012-11-07T12:25:58",
+      "hostname_modified": "s007",
+      "version": "1.0",
+      "display_index": 4,
+      "user_created": "mkewagamang",
+      "field_name": null
+    }
+  },
+  {
+    "pk": 6,
+    "model": "cancer_list.whoillness",
+    "fields": {
+      "hostname_created": "s007",
+      "name": "Severe bacterial infections",
+      "short_name": "Severe bacterial infections",
+      "created": "2012-11-07T12:26:19",
+      "user_modified": "",
+      "modified": "2012-11-07T12:26:19",
+      "hostname_modified": "s007",
+      "version": "1.0",
+      "display_index": 5,
+      "user_created": "mkewagamang",
+      "field_name": null
+    }
+  },
+  {
+    "pk": 7,
+    "model": "cancer_list.whoillness",
+    "fields": {
+      "hostname_created": "s007",
+      "name": "Other, specify",
+      "short_name": "Other, specify",
+      "created": "2012-11-07T12:26:36",
+      "user_modified": "",
+      "modified": "2012-11-07T12:26:36",
+      "hostname_modified": "s007",
+      "version": "1.0",
+      "display_index": 9,
+      "user_created": "mkewagamang",
+      "field_name": null
+    }
+  }
+]

@@ -1,0 +1,4 @@
+#from old db
+python manage.py dumpdata --indent=2 auth.user auth.group cancer_list cancer_subject.enrollmentsite adverse_event.deathcausecategory adverse_event.deathcauseinfo tastypie.apikey  > apps/cancer/fixtures/initial_data.json 
+
+#in json file, find all references to bh_adverse and change to adverse_event. The app_label has changed.

@@ -1,0 +1,1490 @@
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_common_contenttypemap` ADD COLUMN `module_name` varchar(50) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_common_contenttypemap` ;" with params "[]"
+execute "ALTER TABLE `bhp_common_contenttypemap` MODIFY `module_name` varchar(50) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_common_contenttypemap` ALTER COLUMN `module_name` DROP DEFAULT;" with params "[]"
+execute "CREATE INDEX `bhp_common_contenttypemap_44e300d2` ON `bhp_common_contenttypemap` (`user_modified`);" with params "[]"
+execute "CREATE INDEX `bhp_common_contenttypemap_9dc942ff` ON `bhp_common_contenttypemap` (`user_created`);" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "RENAME TABLE `bhp_common_contenttypemap` TO `bhp_content_type_map_contenttypemap`;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_consent_attachedmodel_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_consent_attachedmodel_audit` ;" with params "[]"
+execute "ALTER TABLE `bhp_consent_attachedmodel_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_consent_attachedmodel_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_consent_attachedmodel` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_consent_attachedmodel` ;" with params "[]"
+execute "ALTER TABLE `bhp_consent_attachedmodel` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_consent_attachedmodel` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_consent_consentcatalogue` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_consent_consentcatalogue` ;" with params "[]"
+execute "ALTER TABLE `bhp_consent_consentcatalogue` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_consent_consentcatalogue` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_consent_consentcatalogue_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_consent_consentcatalogue_audit` ;" with params "[]"
+execute "ALTER TABLE `bhp_consent_consentcatalogue_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_consent_consentcatalogue_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_visit_schedulegroup` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_visit_schedulegroup` ;" with params "[]"
+execute "ALTER TABLE `bhp_visit_schedulegroup` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_visit_schedulegroup` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_visit_visitdefinition` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_visit_visitdefinition` ;" with params "[]"
+execute "ALTER TABLE `bhp_visit_visitdefinition` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_visit_visitdefinition` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ADD COLUMN `app_label` varchar(25) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` MODIFY `app_label` varchar(25) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ALTER COLUMN `app_label` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ADD COLUMN `model_name` varchar(25) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` MODIFY `model_name` varchar(25) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ALTER COLUMN `model_name` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ADD CONSTRAINT `bhp_visit_membershipform_category_6ad9e935f6f1bab0_uniq` UNIQUE (`category`)" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_visit_membershipform` ;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` MODIFY `category` varchar(35) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_visit_membershipform` ALTER COLUMN `category` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_crypto_crypt` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_crypto_crypt` ;" with params "[]"
+execute "ALTER TABLE `bhp_crypto_crypt` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_crypto_crypt` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_subject_config_subjectconfiguration` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_subject_config_subjectconfiguration` ;" with params "[]"
+execute "ALTER TABLE `bhp_subject_config_subjectconfiguration` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_subject_config_subjectconfiguration` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_adverse_ae010reporttype` ;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_ae010reporttype` MODIFY `name` varchar(250) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_ae010reporttype` ALTER COLUMN `name` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_adverse_deathcausecategory` ;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_deathcausecategory` MODIFY `name` varchar(250) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_deathcausecategory` ALTER COLUMN `name` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_adverse_adverseeventreporttype` ;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_adverseeventreporttype` MODIFY `name` varchar(250) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_adverseeventreporttype` ALTER COLUMN `name` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_adverse_deathcauseinfo` ;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_deathcauseinfo` MODIFY `name` varchar(250) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_deathcauseinfo` ALTER COLUMN `name` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_adverse_adverseeventstudyrelation` ;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_adverseeventstudyrelation` MODIFY `name` varchar(250) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_adverseeventstudyrelation` ALTER COLUMN `name` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_adverse_deathreasonhospitalized` ;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_deathreasonhospitalized` MODIFY `name` varchar(250) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_deathreasonhospitalized` ALTER COLUMN `name` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_adverse_ae010adversestudyrel` ;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_ae010adversestudyrel` MODIFY `name` varchar(250) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_ae010adversestudyrel` ALTER COLUMN `name` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_adverse_deathmedicalresponsibility` ;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_deathmedicalresponsibility` MODIFY `name` varchar(250) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_deathmedicalresponsibility` ALTER COLUMN `name` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_simpleadverseevent` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_simpleadverseevent` ;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_simpleadverseevent` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_adverse_simpleadverseevent` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_subject_summary_link` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_subject_summary_link` ;" with params "[]"
+execute "ALTER TABLE `bhp_subject_summary_link` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_subject_summary_link` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` MODIFY `dob` date NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ALTER COLUMN `dob` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` MODIFY `dob` date NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ALTER COLUMN `dob` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` MODIFY `initials` varchar(78) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ALTER COLUMN `initials` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` MODIFY `initials` varchar(78) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ALTER COLUMN `initials` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` MODIFY `dob` date NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ALTER COLUMN `dob` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` MODIFY `dob` date NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ALTER COLUMN `dob` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studyspecific` ADD COLUMN `subject_type` varchar(100) NOT NULL DEFAULT 'subject';" with params "[]"
+execute "ALTER TABLE `bhp_variables_studyspecific` ;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studyspecific` MODIFY `subject_type` varchar(100) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studyspecific` ALTER COLUMN `subject_type` DROP DEFAULT;" with params "[]"
+execute "CREATE INDEX `bhp_variables_studyspecific_5aa9a8ff` ON `bhp_variables_studyspecific` (`hostname_created`);" with params "[]"
+execute "CREATE INDEX `bhp_variables_studyspecific_b2771753` ON `bhp_variables_studyspecific` (`hostname_modified`);" with params "[]"
+execute "CREATE INDEX `bhp_variables_studyspecific_9dc942ff` ON `bhp_variables_studyspecific` (`user_created`);" with params "[]"
+execute "CREATE INDEX `bhp_variables_studyspecific_44e300d2` ON `bhp_variables_studyspecific` (`user_modified`);" with params "[]"
+execute "CREATE INDEX `bhp_variables_studysite_5aa9a8ff` ON `bhp_variables_studysite` (`hostname_created`);" with params "[]"
+execute "CREATE INDEX `bhp_variables_studysite_44e300d2` ON `bhp_variables_studysite` (`user_modified`);" with params "[]"
+execute "CREATE INDEX `bhp_variables_studysite_b2771753` ON `bhp_variables_studysite` (`hostname_modified`);" with params "[]"
+execute "CREATE INDEX `bhp_variables_studysite_9dc942ff` ON `bhp_variables_studysite` (`user_created`);" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studyspecific` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studyspecific` ;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studyspecific` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studyspecific` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studysite` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studysite` ;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studysite` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_variables_studysite` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "CREATE INDEX `bhp_actg_reference_appendix40_44e300d2` ON `bhp_actg_reference_appendix40` (`user_modified`);" with params "[]"
+execute "CREATE INDEX `bhp_actg_reference_appendix40_9dc942ff` ON `bhp_actg_reference_appendix40` (`user_created`);" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_actg_reference_appendix40` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_actg_reference_appendix40` ;" with params "[]"
+execute "ALTER TABLE `bhp_actg_reference_appendix40` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_actg_reference_appendix40` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentcancer` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentcancer` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentcancer` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentcancer` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultchemistry_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultchemistry_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultchemistry_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultchemistry_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ADD COLUMN `subject_identifier_aka` varchar(50) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` MODIFY `subject_identifier_aka` varchar(50) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ALTER COLUMN `subject_identifier_aka` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ADD COLUMN `dm_comment` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` MODIFY `dm_comment` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ALTER COLUMN `dm_comment` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ADD COLUMN `language` varchar(25) NOT NULL DEFAULT 'not specified';" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` MODIFY `language` varchar(25) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ALTER COLUMN `language` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ADD COLUMN `registered_subject_id` varchar(36) NULL UNIQUE;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` MODIFY `registered_subject_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` MODIFY `consent_copy` varchar(20) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ALTER COLUMN `consent_copy` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` MODIFY `study_site_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ALTER COLUMN `study_site_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ADD CONSTRAINT `study_site_id_refs_id_bb8ac4d2` FOREIGN KEY (`study_site_id`) REFERENCES `bhp_variables_studysite` (`id`);" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` MODIFY `initials` varchar(78) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ALTER COLUMN `initials` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` ADD COLUMN `subject_visit_id` varchar(36) NULL UNIQUE;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` MODIFY `subject_visit_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` ALTER COLUMN `subject_visit_id` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` MODIFY `registered_subject_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` ADD CONSTRAINT `registered_subject_id_refs_id_fb495875` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrradiation_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrradiation_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrradiation_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrradiation_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` MODIFY `has_alcohol` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` ALTER COLUMN `has_alcohol` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` MODIFY `has_smoked` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` ALTER COLUMN `has_smoked` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` MODIFY `has_worked_mine` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment` ALTER COLUMN `has_worked_mine` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_treatmentresponse_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_treatmentresponse_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_treatmentresponse_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_treatmentresponse_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhhivtest` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhhivtest` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhhivtest` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhhivtest` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresult` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresult` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresult` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresult` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhwhoillness` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhwhoillness` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhwhoillness` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhwhoillness` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_referral_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral_audit` MODIFY `registered_subject_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral_audit` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral_audit` ADD CONSTRAINT `registered_subject_id_refs_id_7a2e6454` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrsurgical_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrsurgical_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrsurgical_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrsurgical_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` ADD COLUMN `stop_date` date NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` MODIFY `stop_date` date NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` ALTER COLUMN `stop_date` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_chemomedplan` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` MODIFY `cycle_num` varchar(15) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` ALTER COLUMN `cycle_num` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_chemomedplan` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` MODIFY `interval` varchar(15) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan` ALTER COLUMN `interval` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsmoking_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsmoking_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsmoking_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsmoking_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` ADD COLUMN `stop_date` date NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` MODIFY `stop_date` date NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` ALTER COLUMN `stop_date` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` MODIFY `cycle_num` varchar(15) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` ALTER COLUMN `cycle_num` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` MODIFY `interval` varchar(15) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord` ALTER COLUMN `interval` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentchemical_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentchemical_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentchemical_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentchemical_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ADD COLUMN `subject_identifier_aka` varchar(50) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` MODIFY `subject_identifier_aka` varchar(50) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ALTER COLUMN `subject_identifier_aka` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ADD COLUMN `dm_comment` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` MODIFY `dm_comment` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ALTER COLUMN `dm_comment` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ADD COLUMN `language` varchar(25) NOT NULL DEFAULT 'not specified';" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` MODIFY `language` varchar(25) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ALTER COLUMN `language` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ADD COLUMN `registered_subject_id` varchar(36) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` MODIFY `registered_subject_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` MODIFY `consent_copy` varchar(20) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ALTER COLUMN `consent_copy` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` MODIFY `study_site_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ALTER COLUMN `study_site_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ADD CONSTRAINT `study_site_id_refs_id_c173c56b` FOREIGN KEY (`study_site_id`) REFERENCES `bhp_variables_studysite` (`id`);" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` MODIFY `initials` varchar(78) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ALTER COLUMN `initials` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ADD COLUMN `may_sms_follow_up` varchar(25) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` MODIFY `may_sms_follow_up` varchar(25) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ALTER COLUMN `may_sms_follow_up` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ADD COLUMN `local_clinic` varchar(75) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` MODIFY `local_clinic` varchar(75) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ALTER COLUMN `local_clinic` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ADD COLUMN `home_village` varchar(75) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` MODIFY `home_village` varchar(75) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ALTER COLUMN `home_village` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_locator` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` MODIFY `subject_visit_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ALTER COLUMN `subject_visit_id` DROP DEFAULT;" with params "[]"
+execute "UPDATE `cancer_subject_locator` SET `subject_visit_id`=%s WHERE `subject_visit_id` IS NULL" with params "[None]"
+execute "ALTER TABLE `cancer_subject_locator` MODIFY `subject_visit_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ADD CONSTRAINT `subject_visit_id_refs_id_00f96efa` FOREIGN KEY (`subject_visit_id`) REFERENCES `cancer_subject_subjectvisit` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ADD CONSTRAINT `cancer_subject_locator_subject_visit_id_351d60a37e9712af_uniq` UNIQUE (`subject_visit_id`)" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_locator` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` MODIFY `registered_subject_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator` ADD CONSTRAINT `registered_subject_id_refs_id_1c65486d` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_activityandfunctioning_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_activityandfunctioning_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_activityandfunctioning_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_activityandfunctioning_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrsurgical` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrsurgical` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrsurgical` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrsurgical` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfuel_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfuel_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfuel_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfuel_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` ADD COLUMN `subject_identifier` varchar(50) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` MODIFY `subject_identifier` varchar(50) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` ALTER COLUMN `subject_identifier` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` MODIFY `appointment_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` ALTER COLUMN `appointment_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit_audit` ADD CONSTRAINT `appointment_id_refs_id_e9d00898` FOREIGN KEY (`appointment_id`) REFERENCES `bhp_appointment_appointment` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentcancer_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentcancer_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentcancer_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentcancer_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhwhoillness_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhwhoillness_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhwhoillness_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhwhoillness_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` ADD COLUMN `stop_date` date NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` MODIFY `stop_date` date NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` ALTER COLUMN `stop_date` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` MODIFY `cycle_num` varchar(15) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` ALTER COLUMN `cycle_num` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` MODIFY `interval` varchar(15) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedplan_audit` ALTER COLUMN `interval` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` MODIFY `has_worked_mine` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` ALTER COLUMN `has_worked_mine` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` MODIFY `has_smoked` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` ALTER COLUMN `has_smoked` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` MODIFY `has_alcohol` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessment_audit` ALTER COLUMN `has_alcohol` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_referral` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral` MODIFY `registered_subject_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_referral` ADD CONSTRAINT `registered_subject_id_refs_id_ace816b0` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ADD COLUMN `cd4_result` numeric(6, 2) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` MODIFY `cd4_result` numeric(6, 2) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ALTER COLUMN `cd4_result` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ADD COLUMN `cd4_drawn_date` date NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` MODIFY `cd4_drawn_date` date NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ALTER COLUMN `cd4_drawn_date` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ADD COLUMN `has_prior_cd4` varchar(3) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` MODIFY `has_prior_cd4` varchar(3) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ALTER COLUMN `has_prior_cd4` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ADD COLUMN `nadir_cd4` numeric(6, 2) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` MODIFY `nadir_cd4` numeric(6, 2) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ALTER COLUMN `nadir_cd4` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ADD COLUMN `nadir_cd4_drawn_date` date NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` MODIFY `nadir_cd4_drawn_date` date NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ALTER COLUMN `nadir_cd4_drawn_date` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ADD COLUMN `has_vl` varchar(3) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` MODIFY `has_vl` varchar(3) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ALTER COLUMN `has_vl` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ADD COLUMN `vl_result` varchar(25) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` MODIFY `vl_result` varchar(25) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ALTER COLUMN `vl_result` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ADD COLUMN `vl_drawn_date` date NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` MODIFY `vl_drawn_date` date NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory_audit` ALTER COLUMN `vl_drawn_date` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_activityandfunctioning` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_activityandfunctioning` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_activityandfunctioning` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_activityandfunctioning` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentrecord_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentrecord_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentrecord_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentrecord_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` ADD COLUMN `enrollment_site_id` integer NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` MODIFY `enrollment_site_id` integer NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` ALTER COLUMN `enrollment_site_id` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` MODIFY `registered_subject_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` ADD CONSTRAINT `registered_subject_id_refs_id_2df8093c` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresult_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresult_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresult_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresult_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_treatmentresponse` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_treatmentresponse` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_treatmentresponse` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_treatmentresponse` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartrecord_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartrecord_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartrecord_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartrecord_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhcd4_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhcd4_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhcd4_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhcd4_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` ADD COLUMN `stop_date` date NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` MODIFY `stop_date` date NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` ALTER COLUMN `stop_date` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` MODIFY `cycle_num` varchar(15) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` ALTER COLUMN `cycle_num` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` MODIFY `interval` varchar(15) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_chemomedrecord_audit` ALTER COLUMN `interval` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultheightweight` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultheightweight` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultheightweight` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultheightweight` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhhivtest_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhhivtest_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhhivtest_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhhivtest_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmenteating` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmenteating` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmenteating` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmenteating` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_symptomsandtesting` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_symptomsandtesting` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_symptomsandtesting` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_symptomsandtesting` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmenteating_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmenteating_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmenteating_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmenteating_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfemale_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfemale_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfemale_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfemale_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhcd4` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhcd4` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhcd4` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_bhhcd4` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthaematology_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthaematology_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthaematology_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthaematology_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ADD COLUMN `cd4_result` numeric(6, 2) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` MODIFY `cd4_result` numeric(6, 2) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ALTER COLUMN `cd4_result` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ADD COLUMN `cd4_drawn_date` date NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` MODIFY `cd4_drawn_date` date NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ALTER COLUMN `cd4_drawn_date` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ADD COLUMN `has_prior_cd4` varchar(3) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` MODIFY `has_prior_cd4` varchar(3) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ALTER COLUMN `has_prior_cd4` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ADD COLUMN `nadir_cd4` numeric(6, 2) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` MODIFY `nadir_cd4` numeric(6, 2) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ALTER COLUMN `nadir_cd4` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ADD COLUMN `nadir_cd4_drawn_date` date NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` MODIFY `nadir_cd4_drawn_date` date NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ALTER COLUMN `nadir_cd4_drawn_date` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ADD COLUMN `has_vl` varchar(3) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` MODIFY `has_vl` varchar(3) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ALTER COLUMN `has_vl` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ADD COLUMN `vl_result` varchar(25) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` MODIFY `vl_result` varchar(25) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ALTER COLUMN `vl_result` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ADD COLUMN `vl_drawn_date` date NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` MODIFY `vl_drawn_date` date NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baselinehivhistory` ALTER COLUMN `vl_drawn_date` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultviralload` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultviralload` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultviralload` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultviralload` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultcd4_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultcd4_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultcd4_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultcd4_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ADD COLUMN `is_death_date_estimated` varchar(25) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` MODIFY `is_death_date_estimated` varchar(25) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ALTER COLUMN `is_death_date_estimated` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ADD COLUMN `subject_visit_id` varchar(36) NULL UNIQUE;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` MODIFY `subject_visit_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ALTER COLUMN `subject_visit_id` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` MODIFY `death_reason_hospitalized_id` integer NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ALTER COLUMN `death_reason_hospitalized_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ADD CONSTRAINT `death_reason_hospitalized_id_refs_id_1fc66328` FOREIGN KEY (`death_reason_hospitalized_id`) REFERENCES `bhp_adverse_deathreasonhospitalized` (`id`);" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` MODIFY `death_cause_category_id` integer NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ALTER COLUMN `death_cause_category_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ADD CONSTRAINT `death_cause_category_id_refs_id_e183ccb2` FOREIGN KEY (`death_cause_category_id`) REFERENCES `bhp_adverse_deathcausecategory` (`id`);" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` MODIFY `registered_subject_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ADD CONSTRAINT `registered_subject_id_refs_id_d015704c` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` MODIFY `death_cause_info_id` integer NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ALTER COLUMN `death_cause_info_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ADD CONSTRAINT `death_cause_info_id_refs_id_65ee2b7e` FOREIGN KEY (`death_cause_info_id`) REFERENCES `bhp_adverse_deathcauseinfo` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan_audit` ADD COLUMN `treatment_goal` varchar(15) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan_audit` MODIFY `treatment_goal` varchar(15) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan_audit` ALTER COLUMN `treatment_goal` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentchemical` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentchemical` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentchemical` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentchemical` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ADD COLUMN `community` varchar(35) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` MODIFY `community` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ALTER COLUMN `community` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ADD COLUMN `community_other` varchar(35) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` MODIFY `community_other` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ALTER COLUMN `community_other` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ADD COLUMN `food_security` varchar(15) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` MODIFY `food_security` varchar(15) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo` ALTER COLUMN `food_security` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` ADD COLUMN `subject_identifier` varchar(50) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` MODIFY `subject_identifier` varchar(50) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` ALTER COLUMN `subject_identifier` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectvisit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` MODIFY `appointment_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` ALTER COLUMN `appointment_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectvisit` ADD CONSTRAINT `appointment_id_refs_id_99fa96cd` FOREIGN KEY (`appointment_id`) REFERENCES `bhp_appointment_appointment` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultcd4` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultcd4` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultcd4` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultcd4` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrchemo_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrchemo_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrchemo_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrchemo_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentrecord` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentrecord` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentrecord` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentrecord` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsun` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsun` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsun` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsun` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ADD COLUMN `onco_number` varchar(10) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` MODIFY `onco_number` varchar(10) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ALTER COLUMN `onco_number` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ADD COLUMN `pathology_number` varchar(50) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` MODIFY `pathology_number` varchar(50) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ALTER COLUMN `pathology_number` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ADD COLUMN `pm_number` varchar(10) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` MODIFY `pm_number` varchar(10) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ALTER COLUMN `pm_number` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ADD COLUMN `any_other_results` varchar(3) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` MODIFY `any_other_results` varchar(3) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ALTER COLUMN `any_other_results` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ADD COLUMN `paper_documents` varchar(7) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` MODIFY `paper_documents` varchar(7) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ALTER COLUMN `paper_documents` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ADD COLUMN `results_to_record_other` varchar(35) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` MODIFY `results_to_record_other` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ALTER COLUMN `results_to_record_other` DROP DEFAULT;" with params "[]"
+execute "CREATE TABLE `cancer_subject_cancerdiagnosis_results_to_record` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `cancerdiagnosis_id` varchar(36) NOT NULL, `resultstorecord_id` integer NOT NULL)" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_results_to_record` ADD CONSTRAINT `cancer_subject_cancerd_cancerdiagnosis_id_7f657682d8e1d829_uniq` UNIQUE (`cancerdiagnosis_id`, `resultstorecord_id`)" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` MODIFY `cancer_category` varchar(105) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis` ALTER COLUMN `cancer_category` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ADD COLUMN `community` varchar(35) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` MODIFY `community` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ALTER COLUMN `community` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ADD COLUMN `community_other` varchar(35) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` MODIFY `community_other` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ALTER COLUMN `community_other` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ADD COLUMN `food_security` varchar(15) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` MODIFY `food_security` varchar(15) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentdemo_audit` ALTER COLUMN `food_security` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthiv_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthiv_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthiv_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthiv_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartrecord` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartrecord` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartrecord` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartrecord` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ADD COLUMN `may_sms_follow_up` varchar(25) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` MODIFY `may_sms_follow_up` varchar(25) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ALTER COLUMN `may_sms_follow_up` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ADD COLUMN `local_clinic` varchar(75) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` MODIFY `local_clinic` varchar(75) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ALTER COLUMN `local_clinic` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ADD COLUMN `home_village` varchar(75) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` MODIFY `home_village` varchar(75) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ALTER COLUMN `home_village` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_locator_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` MODIFY `subject_visit_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ALTER COLUMN `subject_visit_id` DROP DEFAULT;" with params "[]"
+execute "UPDATE `cancer_subject_locator_audit` SET `subject_visit_id`=%s WHERE `subject_visit_id` IS NULL" with params "[None]"
+execute "ALTER TABLE `cancer_subject_locator_audit` MODIFY `subject_visit_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ADD CONSTRAINT `subject_visit_id_refs_id_1fbe0804` FOREIGN KEY (`subject_visit_id`) REFERENCES `cancer_subject_subjectvisit` (`id`);" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_locator_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` MODIFY `registered_subject_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_locator_audit` ADD CONSTRAINT `registered_subject_id_refs_id_7005880c` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultviralload_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultviralload_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultviralload_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultviralload_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ADD COLUMN `is_death_date_estimated` varchar(25) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` MODIFY `is_death_date_estimated` varchar(25) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ALTER COLUMN `is_death_date_estimated` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ADD COLUMN `subject_visit_id` varchar(36) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` MODIFY `subject_visit_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ALTER COLUMN `subject_visit_id` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` MODIFY `death_cause_category_id` integer NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ALTER COLUMN `death_cause_category_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ADD CONSTRAINT `death_cause_category_id_refs_id_7efc71e7` FOREIGN KEY (`death_cause_category_id`) REFERENCES `bhp_adverse_deathcausecategory` (`id`);" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` MODIFY `registered_subject_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ADD CONSTRAINT `registered_subject_id_refs_id_c9957cb5` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` MODIFY `death_reason_hospitalized_id` integer NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ALTER COLUMN `death_reason_hospitalized_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ADD CONSTRAINT `death_reason_hospitalized_id_refs_id_9b66abdf` FOREIGN KEY (`death_reason_hospitalized_id`) REFERENCES `bhp_adverse_deathreasonhospitalized` (`id`);" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` MODIFY `death_cause_info_id` integer NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ALTER COLUMN `death_cause_info_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ADD CONSTRAINT `death_cause_info_id_refs_id_3be7469a` FOREIGN KEY (`death_cause_info_id`) REFERENCES `bhp_adverse_deathcauseinfo` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentalcohol` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentalcohol` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentalcohol` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentalcohol` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulttb` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulttb` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulttb` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulttb` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_haartmedrecord_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord_audit` MODIFY `drug_name` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord_audit` ALTER COLUMN `drug_name` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsmoking` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsmoking` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsmoking` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsmoking` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrradiation` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrradiation` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrradiation` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrradiation` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentmining_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentmining_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentmining_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentmining_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrchemo` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrchemo` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrchemo` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_otrchemo` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfemale` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfemale` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfemale` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfemale` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_haartmedrecord` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord` MODIFY `drug_name` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_haartmedrecord` ALTER COLUMN `drug_name` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan` ADD COLUMN `treatment_goal` varchar(15) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan` MODIFY `treatment_goal` varchar(15) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_oncologytreatmentplan` ALTER COLUMN `treatment_goal` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ADD COLUMN `onco_number` varchar(10) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` MODIFY `onco_number` varchar(10) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ALTER COLUMN `onco_number` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ADD COLUMN `pathology_number` varchar(50) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` MODIFY `pathology_number` varchar(50) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ALTER COLUMN `pathology_number` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ADD COLUMN `pm_number` varchar(10) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` MODIFY `pm_number` varchar(10) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ALTER COLUMN `pm_number` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ADD COLUMN `any_other_results` varchar(3) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` MODIFY `any_other_results` varchar(3) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ALTER COLUMN `any_other_results` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ADD COLUMN `paper_documents` varchar(7) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` MODIFY `paper_documents` varchar(7) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ALTER COLUMN `paper_documents` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ADD COLUMN `results_to_record_other` varchar(35) NOT NULL DEFAULT '';" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` MODIFY `results_to_record_other` varchar(35) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ALTER COLUMN `results_to_record_other` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` MODIFY `cancer_category` varchar(105) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_audit` ALTER COLUMN `cancer_category` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_symptomsandtesting_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_symptomsandtesting_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_symptomsandtesting_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_symptomsandtesting_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthiv` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthiv` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthiv` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthiv` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` ADD COLUMN `subject_visit_id` varchar(36) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` MODIFY `subject_visit_id` varchar(36) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` ALTER COLUMN `subject_visit_id` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` MODIFY `registered_subject_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` ADD CONSTRAINT `registered_subject_id_refs_id_ccf549df` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsun_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsun_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsun_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentsun_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulttb_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulttb_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulttb_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulttb_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` ADD COLUMN `enrollment_site_id` integer NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` MODIFY `enrollment_site_id` integer NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` ALTER COLUMN `enrollment_site_id` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` MODIFY `registered_subject_id` varchar(36) NOT NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` ALTER COLUMN `registered_subject_id` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` ADD CONSTRAINT `registered_subject_id_refs_id_3bab067c` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfuel` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfuel` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfuel` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentfuel` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentmining` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentmining` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentmining` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentmining` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultheightweight_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultheightweight_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultheightweight_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultheightweight_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultchemistry` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultchemistry` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultchemistry` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresultchemistry` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthaematology` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthaematology` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthaematology` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_labresulthaematology` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentalcohol_audit` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentalcohol_audit` ;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentalcohol_audit` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `cancer_subject_baseriskassessmentalcohol_audit` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent` ADD CONSTRAINT `registered_subject_id_refs_id_a3cfad43` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy` ADD CONSTRAINT `subject_visit_id_refs_id_c8f1b8d2` FOREIGN KEY (`subject_visit_id`) REFERENCES `cancer_subject_subjectvisit` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectconsent_audit` ADD CONSTRAINT `registered_subject_id_refs_id_db5f266c` FOREIGN KEY (`registered_subject_id`) REFERENCES `bhp_registration_registeredsubject` (`id`);" with params "[]"
+execute "CREATE INDEX `cancer_subject_subjectconsent_audit_0aaaeb25` ON `cancer_subject_subjectconsent_audit` (`registered_subject_id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist` ADD CONSTRAINT `enrollment_site_id_refs_id_13fae587` FOREIGN KEY (`enrollment_site_id`) REFERENCES `cancer_subject_enrollmentsite` (`id`);" with params "[]"
+execute "CREATE INDEX `cancer_subject_enrollmentchecklist_17b42352` ON `cancer_subject_enrollmentchecklist` (`enrollment_site_id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath` ADD CONSTRAINT `subject_visit_id_refs_id_f980b540` FOREIGN KEY (`subject_visit_id`) REFERENCES `cancer_subject_subjectvisit` (`id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_results_to_record` ADD CONSTRAINT `cancerdiagnosis_id_refs_id_4f171a77` FOREIGN KEY (`cancerdiagnosis_id`) REFERENCES `cancer_subject_cancerdiagnosis` (`id`);" with params "[]"
+execute "CREATE INDEX `cancer_subject_cancerdiagnosis_results_to_record_a07b493f` ON `cancer_subject_cancerdiagnosis_results_to_record` (`cancerdiagnosis_id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_cancerdiagnosis_results_to_record` ADD CONSTRAINT `resultstorecord_id_refs_id_5471b4f4` FOREIGN KEY (`resultstorecord_id`) REFERENCES `cancer_list_resultstorecord` (`id`);" with params "[]"
+execute "CREATE INDEX `cancer_subject_cancerdiagnosis_results_to_record_c91923ed` ON `cancer_subject_cancerdiagnosis_results_to_record` (`resultstorecord_id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectdeath_audit` ADD CONSTRAINT `subject_visit_id_refs_id_3fc3f1fb` FOREIGN KEY (`subject_visit_id`) REFERENCES `cancer_subject_subjectvisit` (`id`);" with params "[]"
+execute "CREATE INDEX `cancer_subject_subjectdeath_audit_3cfe2958` ON `cancer_subject_subjectdeath_audit` (`subject_visit_id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_subjectoffstudy_audit` ADD CONSTRAINT `subject_visit_id_refs_id_cd7fc267` FOREIGN KEY (`subject_visit_id`) REFERENCES `cancer_subject_subjectvisit` (`id`);" with params "[]"
+execute "CREATE INDEX `cancer_subject_subjectoffstudy_audit_3cfe2958` ON `cancer_subject_subjectoffstudy_audit` (`subject_visit_id`);" with params "[]"
+execute "ALTER TABLE `cancer_subject_enrollmentchecklist_audit` ADD CONSTRAINT `enrollment_site_id_refs_id_00e41d76` FOREIGN KEY (`enrollment_site_id`) REFERENCES `cancer_subject_enrollmentsite` (`id`);" with params "[]"
+execute "CREATE INDEX `cancer_subject_enrollmentchecklist_audit_17b42352` ON `cancer_subject_enrollmentchecklist_audit` (`enrollment_site_id`);" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ADD COLUMN `subject_identifier_aka` varchar(50) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` MODIFY `subject_identifier_aka` varchar(50) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ALTER COLUMN `subject_identifier_aka` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ADD COLUMN `dm_comment` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` MODIFY `dm_comment` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ALTER COLUMN `dm_comment` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject_audit` ADD COLUMN `additional_key` varchar(36) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ADD COLUMN `subject_identifier_aka` varchar(50) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` MODIFY `subject_identifier_aka` varchar(50) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ALTER COLUMN `subject_identifier_aka` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ADD COLUMN `dm_comment` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` MODIFY `dm_comment` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ALTER COLUMN `dm_comment` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ADD COLUMN `additional_key` varchar(36) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_registration_registeredsubject` ADD CONSTRAINT `bhp_registration_registeredsub_first_name_232d6de32f29b1c3_uniq` UNIQUE (`first_name`, `dob`, `initials`, `additional_key`)" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "SET FOREIGN_KEY_CHECKS=0;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_sync_middlemantransaction` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_middlemantransaction` MODIFY `consumer` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_middlemantransaction` ALTER COLUMN `consumer` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_sync_testitem` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_sync_testitem` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_testitem` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_testitem` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_sync_producer` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_sync_producer` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_producer` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_producer` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_sync_producer` ADD COLUMN `producer_ip` varchar(78) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_sync_producer` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_producer` MODIFY `producer_ip` varchar(78) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_producer` ALTER COLUMN `producer_ip` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_sync_requestlog` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_sync_requestlog` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_requestlog` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_requestlog` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_sync_incomingtransaction` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_sync_incomingtransaction` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_incomingtransaction` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_incomingtransaction` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_sync_incomingtransaction` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_incomingtransaction` MODIFY `consumer` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_incomingtransaction` ALTER COLUMN `consumer` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ADD COLUMN `revision` varchar(150) NULL;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` MODIFY `revision` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ALTER COLUMN `revision` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ADD COLUMN `is_consumed_middleman` bool NOT NULL DEFAULT False;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` MODIFY `is_consumed_middleman` bool NOT NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ALTER COLUMN `is_consumed_middleman` DROP DEFAULT;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ADD COLUMN `is_consumed_server` bool NOT NULL DEFAULT False;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` MODIFY `is_consumed_server` bool NOT NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ALTER COLUMN `is_consumed_server` DROP DEFAULT;" with params "[]"
+execute "
+            SELECT kc.`constraint_name`, kc.`column_name`, kc.`table_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = %s
+        " with params "['']"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` MODIFY `consumer` varchar(150) NULL;;" with params "[]"
+execute "ALTER TABLE `bhp_sync_outgoingtransaction` ALTER COLUMN `consumer` DROP DEFAULT;" with params "[]"
+execute "CREATE INDEX `bhp_sync_producer_2c4d2328` ON `bhp_sync_producer` (`producer_ip`);" with params "[]"
+execute "CREATE INDEX `bhp_sync_outgoingtransaction_366863ca` ON `bhp_sync_outgoingtransaction` (`is_consumed_middleman`);" with params "[]"
+execute "CREATE INDEX `bhp_sync_outgoingtransaction_84b093fd` ON `bhp_sync_outgoingtransaction` (`is_consumed_server`);" with params "[]"
