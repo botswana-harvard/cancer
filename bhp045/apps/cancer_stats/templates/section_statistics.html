@@ -1,0 +1,55 @@
+{% extends "section.html"%}
+
+{% block breadcrumbs %}
+    
+    {% load tags %}
+    {% comment %}
+        named urls. see urls.py 
+        use the name and pass the url parameter to 
+        successfully reverse 
+    {%endcomment %}
+    {% url "statistics_url_name" section_name as section %}
+    {% url "report_url_name" section_name report_name as url_report_url_name %}
+    {% url "section_search_url_name" section_name search_name search_by_name as section_search_by_name %}    
+
+    <div class="breadcrumbs">
+        <a href="/cancer">Home</a>
+        {% if section_name  %}
+            &rsaquo; <a href="{% url 'section_url_name' section_name='statistics' %}">{{ section_name|capfirst }}</a>
+        {% endif %}        
+        {% if report_name %}
+            &rsaquo; <a  href="{{ url_report_url_name }}">{{ report_name|capfirst }}</a>    
+        {% endif %}  
+        {% if report_title %}
+            &rsaquo; {{ report_title|capfirst }}</a>    
+        {% endif %}  
+        {% if app_label and not model_name %}
+            &rsaquo; {{ app_label|capfirst }}</a>    
+        {% endif %}  
+        {% if app_label and model_name %}
+            &rsaquo; {{ app_label|capfirst }} &rsaquo; {{ model_name|capfirst }}</a>    
+        {% endif %}  
+        
+    </div>
+    
+{% endblock %}
+
+{% block section_title%}{% endblock%}
+
+
+
+{% block section_links%}
+<H3>Reports</H3>
+<ul class="list_of_reports">
+<LI><A href="/cancer/statistics/model_describer/">Model Description and Data Summary</A>
+<LI>Model Summaries by Site and Gender
+    <UL>
+    <LI><A href="/cancer/section/statistics/model_group_describer/registered_subject/">Registration and Study Status Models</A>
+    <LI><A href="/cancer/section/statistics/model_group_describer/subject_visit/">Scheduled Subject Models</A>
+
+    </ul></LI>
+</ul>
+{% endblock%}
+
+{% block report %}{% endblock%}
+

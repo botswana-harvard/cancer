@@ -1,0 +1,18 @@
+{% extends "section_administration.html"%}
+{% load admin_urls %}
+{% load url from future %}
+
+{% block admin_sections %}
+    <ul><li><A href="/admin/">All sections</A></ul>
+    <H5>Subject Consents</H5>
+    <ul>
+        <li><A href="{% url 'admin:cancer_subject_subjectconsent_changelist' %}">Consented Subjects</A>  
+    </ul>
+ 
+{% block device_sync %}{% endblock device_sync %}
+
+{% block edc_import %}{% endblock edc_import %}
+
+{% block edc_export %}{% endblock edc_export %}
+
+{% endblock admin_sections %}

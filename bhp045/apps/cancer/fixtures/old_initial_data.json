@@ -1,0 +1,1505 @@
+[
+{
+  "pk": 1, 
+  "model": "auth.group", 
+  "fields": {
+    "name": "research_assistant", 
+    "permissions": [
+      388, 
+      389, 
+      385, 
+      386, 
+      514, 
+      515, 
+      511, 
+      512, 
+      376, 
+      377, 
+      373, 
+      374, 
+      334, 
+      335, 
+      331, 
+      332, 
+      328, 
+      329, 
+      532, 
+      533, 
+      529, 
+      530, 
+      520, 
+      521, 
+      517, 
+      518, 
+      526, 
+      527, 
+      523, 
+      524, 
+      382, 
+      383, 
+      379, 
+      380, 
+      406, 
+      407, 
+      403, 
+      404, 
+      412, 
+      413, 
+      409, 
+      410, 
+      442, 
+      443, 
+      439, 
+      440, 
+      436, 
+      437, 
+      433, 
+      434, 
+      448, 
+      449, 
+      445, 
+      446, 
+      460, 
+      461, 
+      457, 
+      458, 
+      478, 
+      479, 
+      475, 
+      476, 
+      472, 
+      473, 
+      469, 
+      470, 
+      490, 
+      491, 
+      487, 
+      488, 
+      454, 
+      455, 
+      451, 
+      452, 
+      484, 
+      485, 
+      481, 
+      482, 
+      466, 
+      467, 
+      463, 
+      464, 
+      430, 
+      431, 
+      427, 
+      428, 
+      394, 
+      395, 
+      391, 
+      392, 
+      496, 
+      497, 
+      493, 
+      494, 
+      400, 
+      401, 
+      397, 
+      398, 
+      502, 
+      503, 
+      499, 
+      500, 
+      424, 
+      425, 
+      421, 
+      422, 
+      538, 
+      539, 
+      535, 
+      536, 
+      418, 
+      419, 
+      415, 
+      416
+    ]
+  }
+},
+{
+  "pk": 2, 
+  "model": "auth.group", 
+  "fields": {
+    "name": "study_physician", 
+    "permissions": [
+      7, 
+      8, 
+      388, 
+      389, 
+      385, 
+      386, 
+      514, 
+      515, 
+      511, 
+      512, 
+      376, 
+      377, 
+      373, 
+      374, 
+      334, 
+      335, 
+      532, 
+      533, 
+      529, 
+      530, 
+      520, 
+      521, 
+      517, 
+      518, 
+      526, 
+      527, 
+      523, 
+      524, 
+      382, 
+      383, 
+      379, 
+      380, 
+      406, 
+      407, 
+      403, 
+      404, 
+      412, 
+      413, 
+      409, 
+      410, 
+      442, 
+      443, 
+      439, 
+      440, 
+      436, 
+      437, 
+      433, 
+      434, 
+      448, 
+      449, 
+      445, 
+      446, 
+      460, 
+      461, 
+      457, 
+      458, 
+      478, 
+      479, 
+      475, 
+      476, 
+      472, 
+      473, 
+      469, 
+      470, 
+      490, 
+      491, 
+      487, 
+      488, 
+      454, 
+      455, 
+      451, 
+      452, 
+      484, 
+      485, 
+      481, 
+      482, 
+      466, 
+      467, 
+      463, 
+      464, 
+      430, 
+      431, 
+      427, 
+      428, 
+      556, 
+      557, 
+      553, 
+      554, 
+      394, 
+      395, 
+      391, 
+      392, 
+      496, 
+      497, 
+      493, 
+      494, 
+      400, 
+      401, 
+      397, 
+      398, 
+      502, 
+      503, 
+      499, 
+      500, 
+      544, 
+      545, 
+      541, 
+      542, 
+      550, 
+      551, 
+      547, 
+      548, 
+      424, 
+      425, 
+      421, 
+      422, 
+      538, 
+      539, 
+      535, 
+      536, 
+      418, 
+      419, 
+      415, 
+      416
+    ]
+  }
+},
+{
+  "pk": 3, 
+  "model": "auth.group", 
+  "fields": {
+    "name": "data_keyers", 
+    "permissions": [
+      388, 
+      389, 
+      385, 
+      386, 
+      514, 
+      515, 
+      511, 
+      512, 
+      376, 
+      377, 
+      373, 
+      374, 
+      334, 
+      335, 
+      331, 
+      332, 
+      328, 
+      329, 
+      532, 
+      533, 
+      529, 
+      530, 
+      520, 
+      521, 
+      517, 
+      518, 
+      526, 
+      527, 
+      523, 
+      524, 
+      382, 
+      383, 
+      379, 
+      380, 
+      406, 
+      407, 
+      403, 
+      404, 
+      412, 
+      413, 
+      409, 
+      410, 
+      442, 
+      443, 
+      439, 
+      440, 
+      436, 
+      437, 
+      433, 
+      434, 
+      448, 
+      449, 
+      445, 
+      446, 
+      460, 
+      461, 
+      457, 
+      458, 
+      478, 
+      479, 
+      475, 
+      476, 
+      472, 
+      473, 
+      469, 
+      470, 
+      490, 
+      491, 
+      487, 
+      488, 
+      454, 
+      455, 
+      451, 
+      452, 
+      484, 
+      485, 
+      481, 
+      482, 
+      466, 
+      467, 
+      463, 
+      464, 
+      430, 
+      431, 
+      427, 
+      428, 
+      556, 
+      557, 
+      553, 
+      554, 
+      394, 
+      395, 
+      391, 
+      392, 
+      496, 
+      497, 
+      493, 
+      494, 
+      400, 
+      401, 
+      397, 
+      398, 
+      502, 
+      503, 
+      499, 
+      500, 
+      544, 
+      545, 
+      541, 
+      542, 
+      550, 
+      551, 
+      547, 
+      548, 
+      424, 
+      425, 
+      421, 
+      422, 
+      538, 
+      539, 
+      535, 
+      536, 
+      418, 
+      419, 
+      415, 
+      416
+    ]
+  }
+},
+{
+  "pk": 4, 
+  "model": "auth.group", 
+  "fields": {
+    "name": "data_manager", 
+    "permissions": []
+  }
+},
+{
+  "pk": 5, 
+  "model": "auth.group", 
+  "fields": {
+    "name": "action_manager", 
+    "permissions": []
+  }
+},
+{
+  "pk": 1, 
+  "model": "cancer_list.whoillness", 
+  "fields": {
+    "hostname_created": "s007", 
+    "name": "Wasting", 
+    "short_name": "wasting", 
+    "created": "2012-11-07T12:24:48", 
+    "user_modified": "", 
+    "modified": "2012-11-07T12:24:48", 
+    "hostname_modified": "s007", 
+    "version": "1.0", 
+    "display_index": 0, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 2, 
+  "model": "cancer_list.whoillness", 
+  "fields": {
+    "hostname_created": "s007", 
+    "name": " Tuberculosis", 
+    "short_name": "TB", 
+    "created": "2012-11-07T12:25:08", 
+    "user_modified": "", 
+    "modified": "2012-11-07T12:25:08", 
+    "hostname_modified": "s007", 
+    "version": "1.0", 
+    "display_index": 1, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 3, 
+  "model": "cancer_list.whoillness", 
+  "fields": {
+    "hostname_created": "s007", 
+    "name": "Kaposi's sarcoma", 
+    "short_name": "Kaposi's sarcoma", 
+    "created": "2012-11-07T12:25:24", 
+    "user_modified": "", 
+    "modified": "2012-11-07T12:25:24", 
+    "hostname_modified": "s007", 
+    "version": "1.0", 
+    "display_index": 2, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 4, 
+  "model": "cancer_list.whoillness", 
+  "fields": {
+    "hostname_created": "s007", 
+    "name": "Kidney failure", 
+    "short_name": "Kidney failure", 
+    "created": "2012-11-07T12:25:42", 
+    "user_modified": "", 
+    "modified": "2012-11-07T12:25:42", 
+    "hostname_modified": "s007", 
+    "version": "1.0", 
+    "display_index": 3, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 5, 
+  "model": "cancer_list.whoillness", 
+  "fields": {
+    "hostname_created": "s007", 
+    "name": "Cryptococcal meningitis", 
+    "short_name": "Cryptococcal meningitis", 
+    "created": "2012-11-07T12:25:58", 
+    "user_modified": "", 
+    "modified": "2012-11-07T12:25:58", 
+    "hostname_modified": "s007", 
+    "version": "1.0", 
+    "display_index": 4, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 6, 
+  "model": "cancer_list.whoillness", 
+  "fields": {
+    "hostname_created": "s007", 
+    "name": "Severe bacterial infections", 
+    "short_name": "Severe bacterial infections", 
+    "created": "2012-11-07T12:26:19", 
+    "user_modified": "", 
+    "modified": "2012-11-07T12:26:19", 
+    "hostname_modified": "s007", 
+    "version": "1.0", 
+    "display_index": 5, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 7, 
+  "model": "cancer_list.whoillness", 
+  "fields": {
+    "hostname_created": "s007", 
+    "name": "Other, specify", 
+    "short_name": "Other, specify", 
+    "created": "2012-11-07T12:26:36", 
+    "user_modified": "", 
+    "modified": "2012-11-07T12:26:36", 
+    "hostname_modified": "s007", 
+    "version": "1.0", 
+    "display_index": 9, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 1, 
+  "model": "cancer_list.resultstorecord", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "haematology", 
+    "short_name": "haematology", 
+    "created": "2015-04-14T12:07:52", 
+    "user_modified": "", 
+    "modified": "2015-04-14T12:07:52", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 0, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 2, 
+  "model": "cancer_list.resultstorecord", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "chemistry", 
+    "short_name": "chemistry", 
+    "created": "2015-04-14T12:08:04", 
+    "user_modified": "", 
+    "modified": "2015-04-14T12:08:04", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 1, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 3, 
+  "model": "cancer_list.resultstorecord", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "tubercolosis", 
+    "short_name": "tubercolosis", 
+    "created": "2015-04-14T12:08:18", 
+    "user_modified": "", 
+    "modified": "2015-04-14T12:08:18", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 2, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 4, 
+  "model": "cancer_list.resultstorecord", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "none", 
+    "short_name": "none", 
+    "created": "2015-04-14T12:08:31", 
+    "user_modified": "", 
+    "modified": "2015-04-14T12:08:31", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 3, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 1, 
+  "model": "cancer_list.radiationsideeffects", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "UNK", 
+    "short_name": "Unknown", 
+    "created": "2015-04-21T11:28:27", 
+    "user_modified": "", 
+    "modified": "2015-04-21T11:28:27", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 0, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 2, 
+  "model": "cancer_list.radiationsideeffects", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "hyperpigmentation", 
+    "short_name": "hyperpigmentation", 
+    "created": "2015-04-21T11:28:41", 
+    "user_modified": "", 
+    "modified": "2015-04-21T11:28:41", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 1, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 3, 
+  "model": "cancer_list.radiationsideeffects", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "vaginal stenosis", 
+    "short_name": "vaginal stenosis", 
+    "created": "2015-04-21T11:29:14", 
+    "user_modified": "", 
+    "modified": "2015-04-21T11:29:14", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 2, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 4, 
+  "model": "cancer_list.radiationsideeffects", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "diarrhea, proctitis", 
+    "short_name": "diarrhea_proctitis", 
+    "created": "2015-04-21T11:29:34", 
+    "user_modified": "mkewagamang", 
+    "modified": "2015-04-21T11:29:44", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 3, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 5, 
+  "model": "cancer_list.radiationsideeffects", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "moist desquamation", 
+    "short_name": "moist desquamation", 
+    "created": "2015-04-21T11:30:12", 
+    "user_modified": "", 
+    "modified": "2015-04-21T11:30:12", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 4, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 6, 
+  "model": "cancer_list.radiationsideeffects", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "fibrosis", 
+    "short_name": "fibrosis", 
+    "created": "2015-04-21T11:30:28", 
+    "user_modified": "", 
+    "modified": "2015-04-21T11:30:28", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 5, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 7, 
+  "model": "cancer_list.radiationsideeffects", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "name": "Other, specify", 
+    "short_name": "Other", 
+    "created": "2015-04-21T11:30:49", 
+    "user_modified": "mkewagamang", 
+    "modified": "2015-04-21T11:31:03", 
+    "hostname_modified": "silverapple", 
+    "version": "1.0", 
+    "display_index": 6, 
+    "user_created": "mkewagamang", 
+    "field_name": null
+  }
+},
+{
+  "pk": 1, 
+  "model": "cancer_subject.enrollmentsite", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "site_name": "Nyangabgwe Referral Hospital (NRH)", 
+    "created": "2015-04-14T12:06:10", 
+    "user_modified": "", 
+    "modified": "2015-04-14T12:06:10", 
+    "hostname_modified": "silverapple", 
+    "user_created": "mkewagamang"
+  }
+},
+{
+  "pk": 2, 
+  "model": "cancer_subject.enrollmentsite", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "site_name": "Gaborone Private Hospital (GPH)", 
+    "created": "2015-04-14T12:06:25", 
+    "user_modified": "", 
+    "modified": "2015-04-14T12:06:25", 
+    "hostname_modified": "silverapple", 
+    "user_created": "mkewagamang"
+  }
+},
+{
+  "pk": 3, 
+  "model": "cancer_subject.enrollmentsite", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "site_name": "Princess Marina Hospital (PMH)", 
+    "created": "2015-04-14T12:06:40", 
+    "user_modified": "", 
+    "modified": "2015-04-14T12:06:40", 
+    "hostname_modified": "silverapple", 
+    "user_created": "mkewagamang"
+  }
+},
+{
+  "pk": 4, 
+  "model": "cancer_subject.enrollmentsite", 
+  "fields": {
+    "hostname_created": "silverapple", 
+    "site_name": "Bokamoso Private Hospital (BPH)", 
+    "created": "2015-04-25T19:27:48", 
+    "user_modified": "", 
+    "modified": "2015-04-25T19:27:48", 
+    "hostname_modified": "silverapple", 
+    "user_created": "mkewagamang"
+  }
+},
+{
+  "pk": 1, 
+  "model": "adverse_event.deathcausecategory", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "No information will ever be available", 
+    "short_name": "No information will ever be available", 
+    "created": "2012-09-20T12:44:32", 
+    "user_modified": "", 
+    "modified": "2012-09-20T12:44:32", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 0, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 7, 
+  "model": "adverse_event.deathcausecategory", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Other, specify", 
+    "short_name": "Other, specify", 
+    "created": "2012-09-20T12:45:52", 
+    "user_modified": "", 
+    "modified": "2012-09-20T12:45:52", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 99, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 8, 
+  "model": "adverse_event.deathcausecategory", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Cancer ", 
+    "short_name": "Cancer ", 
+    "created": "2012-09-20T13:54:26", 
+    "user_modified": "", 
+    "modified": "2012-09-20T13:54:26", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 1, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 9, 
+  "model": "adverse_event.deathcausecategory", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "HIV infection or HIV/AIDS-related diagnosis", 
+    "short_name": "HIV infection or HIV/AIDS-related diagnosis", 
+    "created": "2012-09-20T13:54:45", 
+    "user_modified": "", 
+    "modified": "2012-09-20T13:54:45", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 2, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 10, 
+  "model": "adverse_event.deathcausecategory", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Disease/injury unrelated to cancer or HIV", 
+    "short_name": "Disease/injury unrelated to cancer or HIV", 
+    "created": "2012-09-20T13:55:04", 
+    "user_modified": "", 
+    "modified": "2012-09-20T13:55:04", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 3, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 11, 
+  "model": "adverse_event.deathcausecategory", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Toxicity from cancer treatment (complications of chemotherapy, radiation, or surgery)", 
+    "short_name": "Toxicity from cancer treatment ", 
+    "created": "2012-09-20T13:55:38", 
+    "user_modified": "", 
+    "modified": "2012-09-20T13:55:38", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 4, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 12, 
+  "model": "adverse_event.deathcausecategory", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Toxicity from HIV/AIDS treatment (HAART or treatment of HIV/AIDS-related diagnosis)", 
+    "short_name": "Toxicity from HIV/AIDS treatment", 
+    "created": "2012-09-20T13:56:06", 
+    "user_modified": "", 
+    "modified": "2012-09-20T13:56:06", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 5, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 1, 
+  "model": "adverse_event.deathcauseinfo", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "No information will ever be available", 
+    "short_name": "No information will ever be available", 
+    "created": "2012-09-20T14:10:03", 
+    "user_modified": "", 
+    "modified": "2012-09-20T14:10:03", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 0, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 2, 
+  "model": "adverse_event.deathcauseinfo", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Other, specify", 
+    "short_name": "Other, specify", 
+    "created": "2012-09-20T14:10:20", 
+    "user_modified": "", 
+    "modified": "2012-09-20T14:10:20", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 99, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 3, 
+  "model": "adverse_event.deathcauseinfo", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Autopsy", 
+    "short_name": "Autopsy", 
+    "created": "2012-09-20T14:11:36", 
+    "user_modified": "", 
+    "modified": "2012-09-20T14:11:36", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 1, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 4, 
+  "model": "adverse_event.deathcauseinfo", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Clinical record", 
+    "short_name": "Clinical record", 
+    "created": "2012-09-20T14:11:49", 
+    "user_modified": "", 
+    "modified": "2012-09-20T14:11:49", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 2, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 5, 
+  "model": "adverse_event.deathcauseinfo", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Information from physician/nurse/other health care provider", 
+    "short_name": "Information from physician/nurse/other health care provider", 
+    "created": "2012-09-20T14:12:03", 
+    "user_modified": "", 
+    "modified": "2012-09-20T14:12:03", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 3, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 6, 
+  "model": "adverse_event.deathcauseinfo", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Information from participant\u2019s relatives or friends", 
+    "short_name": "Information from participant\u2019s relatives or friends", 
+    "created": "2012-09-20T14:12:20", 
+    "user_modified": "", 
+    "modified": "2012-09-20T14:12:20", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 4, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 7, 
+  "model": "adverse_event.deathcauseinfo", 
+  "fields": {
+    "hostname_created": "melissa", 
+    "name": "Information requested, still pending", 
+    "short_name": "Information requested, still pending", 
+    "created": "2012-09-20T14:12:34", 
+    "user_modified": "", 
+    "modified": "2012-09-20T14:12:34", 
+    "hostname_modified": "melissa", 
+    "version": "1.0", 
+    "display_index": 5, 
+    "user_created": "", 
+    "field_name": null
+  }
+},
+{
+  "pk": 1, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "django", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2015-02-10T16:47:32", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$0VKHQqkrnqJg$FddSOgnwo4kYASGAH35swedFYsDRK/JXe6Ly+trwMUI=", 
+    "email": "django@bhp.org.bw", 
+    "date_joined": "2012-10-12T10:35:03"
+  }
+},
+{
+  "pk": 2, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "mkewagamang", 
+    "first_name": "Melissa", 
+    "last_name": "Kewagamang", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2015-04-25T19:23:39", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$12000$t58ptNdUtQI0$lqf+RLyk5r8axMsXTDllY15SAZ6weCbkVqKeF2JBe64=", 
+    "email": "", 
+    "date_joined": "2012-10-12T10:43:37"
+  }
+},
+{
+  "pk": 3, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "pkosana", 
+    "first_name": "Phaskaline", 
+    "last_name": "Kosana", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": true, 
+    "last_login": "2013-03-14T14:22:06", 
+    "groups": [
+      3
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$DWlKCCbBFsKO$anHnHdVypEU/lqKYnG42NbIOICTsmnFAVOlUZumRZBo=", 
+    "email": "pkosana@bhp.org.bw", 
+    "date_joined": "2012-10-12T11:49:24"
+  }
+},
+{
+  "pk": 4, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "anyoni", 
+    "first_name": "Moscow", 
+    "last_name": "Nyoni", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": true, 
+    "last_login": "2013-06-11T11:37:52", 
+    "groups": [
+      3
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$mArDrzBMaT1v$+xd6NkVwNXXd1da5yVbd5OSTdr7kYTLZyB+ByhXxvv0=", 
+    "email": "anyoni@bhp.org.bw", 
+    "date_joined": "2012-10-12T11:50:39"
+  }
+},
+{
+  "pk": 5, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "mgotlhokwang", 
+    "first_name": "Magdeline", 
+    "last_name": "Gotlhokwang", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": true, 
+    "last_login": "2013-02-11T15:59:20", 
+    "groups": [
+      3
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$5FAzEKRVjxVN$AXl2gFLzmgR4h8grU75BN+SPnrZxYQlT76opW9zE0Qw=", 
+    "email": "mgotlhokwang@bhp.org.bw", 
+    "date_joined": "2012-10-12T11:51:49"
+  }
+},
+{
+  "pk": 6, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "ojohn", 
+    "first_name": "Oaitse", 
+    "last_name": "John", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2015-02-20T15:55:27", 
+    "groups": [
+      1
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$SEkl2NyKLjLs$s6eys56kzHt29IgI8w/pUbJBXsB6y34AApHMORRK0ew=", 
+    "email": "ojohn@bhp.org.bw", 
+    "date_joined": "2012-10-12T12:00:05"
+  }
+},
+{
+  "pk": 7, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "gmotswetla", 
+    "first_name": "Galaletsang", 
+    "last_name": "Motswetla", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": true, 
+    "last_login": "2015-02-20T15:43:45", 
+    "groups": [
+      1
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$bdSKcAK0ZFM5$yuYQiJ4OqJIXq2JHIzGXCLov38nPA2kJW2ijlOwRoTk=", 
+    "email": "gmotswetla@bhp.org.bw", 
+    "date_joined": "2012-10-12T15:10:17"
+  }
+},
+{
+  "pk": 8, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "tleselwa", 
+    "first_name": "Tapologo", 
+    "last_name": "Leselwa", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": true, 
+    "last_login": "2014-07-31T09:37:17", 
+    "groups": [
+      1
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$60d5nwdAKvoo$5U5USBlFvPht2FUqXxtrvd/cysDXQcVZK/20tUH4fzI=", 
+    "email": "tleselwa@bhp.org.bw", 
+    "date_joined": "2012-10-12T15:11:02"
+  }
+},
+{
+  "pk": 9, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "mkhombane", 
+    "first_name": "Mmapula", 
+    "last_name": "Khombane", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": true, 
+    "last_login": "2013-08-22T11:42:04", 
+    "groups": [
+      1
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$xafpKN7XhNU1$bayDtkb4hmdJjx0CVlx+TjDVL/NEs7TUQ56FD0FTDw4=", 
+    "email": "mkhombane@bhp.org.bw", 
+    "date_joined": "2012-10-12T15:13:05"
+  }
+},
+{
+  "pk": 10, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "opharatlhatlhe", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2012-10-15T14:30:54", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$cPRuahVTS6u3$5y1kP9eVsUISWKt5YpND91SzRoxkkLXHwEjes87HDgs=", 
+    "email": "", 
+    "date_joined": "2012-10-15T14:30:54"
+  }
+},
+{
+  "pk": 11, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "speterson", 
+    "first_name": "Scott", 
+    "last_name": "Dryden-Peterson", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2015-02-05T17:35:56", 
+    "groups": [
+      2
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$OeO2GeCKSrFC$g+CF0B/7TlmwzDmTvIWYJRV/FXDocO8gsumXw27Gf3U=", 
+    "email": "speterson@bhp.org.bw", 
+    "date_joined": "2012-10-22T10:57:04"
+  }
+},
+{
+  "pk": 13, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "abelc", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": false, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-04-04T16:14:50", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$yjN6yHR8bdUx$EEqoGnvPeZY1eG9PfqRDgWyM+uIB1a8lr9uKtoGAe2w=", 
+    "email": "", 
+    "date_joined": "2012-11-09T14:44:15"
+  }
+},
+{
+  "pk": 14, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "cbrown", 
+    "first_name": "Carolyn", 
+    "last_name": "Brown", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-11-19T12:42:43", 
+    "groups": [
+      2
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$b18UbMslXBbu$W4zDtVwTooW3mGsibMWqWPjjShV2yOfRebCS4GNmvaA=", 
+    "email": "cbrown@bhp.org.bw", 
+    "date_joined": "2012-11-13T12:50:03"
+  }
+},
+{
+  "pk": 15, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "tkochane", 
+    "first_name": "Tlhalefang", 
+    "last_name": "Kochane", 
+    "is_active": false, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-01T14:21:21", 
+    "groups": [
+      3
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$izUS8aVNBNYy$ImWn5IgBvi7epDuUiX3zJMoufAea20HNX9W6vco/Y2Y=", 
+    "email": "", 
+    "date_joined": "2013-01-23T10:38:14"
+  }
+},
+{
+  "pk": 16, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "mboyas", 
+    "first_name": "Maitseo", 
+    "last_name": "Boyas", 
+    "is_active": false, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-01T14:27:25", 
+    "groups": [
+      3
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$stpgeIZvhFzJ$O34ba//5TqUHioPdtDhbAsVtPto645ypwvEZIqO79vo=", 
+    "email": "", 
+    "date_joined": "2013-01-23T10:38:32"
+  }
+},
+{
+  "pk": 17, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "kkeorapetse", 
+    "first_name": "Kebitsaone", 
+    "last_name": "Keorapetse", 
+    "is_active": false, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-01T15:00:25", 
+    "groups": [
+      3
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$UXb7lXthxMxU$CaewzP3WwNDkQYWqclKMIOxmw8/oNt0PbLjQnmGiDK0=", 
+    "email": "", 
+    "date_joined": "2013-01-23T10:38:55"
+  }
+},
+{
+  "pk": 18, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "erikvw", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-10-20T09:34:35", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$Xma5nCGyQPZV$QaNkLn9RcGtMpE6eDBm9KHseJcTQNL4Sbx6GkwC/HW4=", 
+    "email": "ew2789@gmail.com", 
+    "date_joined": "2013-01-29T11:21:05"
+  }
+},
+{
+  "pk": 19, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "pmotshegwa", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2013-02-08T11:07:23", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$6LqD5CEwuWPm$J1T6IGwJnDsXT3Gd+krD3c5AhLf1pOmLgZHLe4mPkcc=", 
+    "email": "", 
+    "date_joined": "2013-02-08T11:07:09"
+  }
+},
+{
+  "pk": 20, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "qlei", 
+    "first_name": "Quanhong", 
+    "last_name": "Lei", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2013-08-29T21:14:08", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$rPBtm9JzdpRT$0fLPrJmgK6TlOKCxIsPzlV76rHW/u/tBF342M3fAalY=", 
+    "email": "lei@hsph.harvard.edu", 
+    "date_joined": "2013-08-29T20:35:54"
+  }
+},
+{
+  "pk": 21, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "rhodgeman", 
+    "first_name": "Ryan", 
+    "last_name": "Hodgeman", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-08-08T14:49:58", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$pMWZ1se7BhrS$8aouDwZ6gl1xLq4Ai0qyP19FzHbJnfK8n2pRRVezURk=", 
+    "email": "rhodgeman@bhp.org.bw", 
+    "date_joined": "2013-10-17T15:06:25"
+  }
+},
+{
+  "pk": 23, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "slockman", 
+    "first_name": "Shahin", 
+    "last_name": "Lockman", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": true, 
+    "last_login": "2013-12-13T16:02:29", 
+    "groups": [
+      4
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$uJ6FuCCfv78q$oEYQh7ATFya/ZW3AzrDk2JbQ7vHHHQurWSL9W+KdCoM=", 
+    "email": "shahin.lockman@gmail.com", 
+    "date_joined": "2013-12-13T13:56:41"
+  }
+},
+{
+  "pk": 24, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "mmilligan", 
+    "first_name": "Michael", 
+    "last_name": "Milligan", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2014-08-04T11:03:33", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$HSZHn9dgTZG4$lbPDPRTwih1opLsKeRna0TwR2zj+nHXa+4E6U6EFRd4=", 
+    "email": "michael.g.milligan@gmail.com", 
+    "date_joined": "2014-06-16T11:33:55"
+  }
+},
+{
+  "pk": 25, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "amapes", 
+    "first_name": "Abigail", 
+    "last_name": "Mapes", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2015-02-16T14:35:25", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$DkwvdFWlH379$iEM0ZnfeonIEqfx47QV6YfZlmC8kfiVaua/xO9Dzb7s=", 
+    "email": "amapes@bhp.org.bw", 
+    "date_joined": "2014-08-05T11:04:30"
+  }
+},
+{
+  "pk": 26, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "omacha", 
+    "first_name": "Onalethata", 
+    "last_name": "Macha", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": true, 
+    "last_login": "2015-02-20T15:35:37", 
+    "groups": [
+      1
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$t9WYvjNJfmZp$fY3qmWCJ34oHkXYcSGfU5kSbQBYwSv3PKpnPfTES8TA=", 
+    "email": "omacha@bhp.org.bw", 
+    "date_joined": "2014-08-12T15:32:19"
+  }
+},
+{
+  "pk": 27, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "jcloete", 
+    "first_name": "Judicah", 
+    "last_name": "Cloete", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": true, 
+    "last_login": "2015-02-23T11:10:29", 
+    "groups": [
+      1
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$6TeasfJMSiSX$tgHoNWvLFfs3Qtj6xCi1jv8hk1jTlZYqoPJ15vRz7dk=", 
+    "email": "jcloete@bhp.org.bw", 
+    "date_joined": "2014-09-08T08:24:38"
+  }
+},
+{
+  "pk": 28, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "steko", 
+    "first_name": "Sainah", 
+    "last_name": "Teko", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": true, 
+    "last_login": "2015-02-20T10:45:43", 
+    "groups": [
+      1
+    ], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$VWdB4NaRHmHE$BPOh5PP2/rNTBbRC0GyA1lyJOtDqmbbXqRjtvQ+me/8=", 
+    "email": "steko@bhp.org.bw", 
+    "date_joined": "2014-09-08T08:37:12"
+  }
+}
+]

@@ -1,0 +1,1 @@
+from .cancer_app_configuration import CancerAppConfiguration

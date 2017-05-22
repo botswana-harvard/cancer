@@ -1,0 +1,7 @@
+# my.cnf
+[client]
+database = bhp045_master
+user = root
+password = cc3721b
+default-character-set = utf8
+init_command = 'SET storage_engine=INNODB'

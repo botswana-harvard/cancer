@@ -1,0 +1,2 @@
+DEVICE_ID = 99
+SITE_CODE = '4'

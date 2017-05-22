@@ -1,0 +1,3 @@
+from natural_key_tests import NaturalKeyTests
+from subject_off_study_tests import SubjectOffStudyTests
+from subject_registration_tests import SubjectRegistrationTests
