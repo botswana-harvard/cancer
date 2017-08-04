@@ -210,6 +210,7 @@ MEDIA_URL = '/media/'
 
 
 KEY_PATH = config['django_crypto_fields'].get('key_path')
+GIT_DIR = BASE_DIR
 DEVICE_ID = config['edc_device'].get('device_id', '99')
 DEVICE_ROLE = config['edc_device'].get('role', 'CentralServer')
 LABEL_PRINTER = config['edc_label'].get('label_printer', 'label_printer')
