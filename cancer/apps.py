@@ -1,8 +1,6 @@
 from datetime import datetime
 import os
 
-from cancer_screening.apps import AppConfig
-from cancer_subject.apps import AppConfig as BaseCancerSubjectAppConfig
 from dateutil.relativedelta import MO, TU, WE, TH, FR, SA, SU
 from dateutil.tz import gettz
 from django.apps import AppConfig as DjangoAppConfig
@@ -15,9 +13,10 @@ from edc_base.utils import get_utcnow
 from edc_consent.apps import AppConfig as BaseEdcConsentAppConfig
 from edc_constants.constants import FAILED_ELIGIBILITY
 from edc_device.apps import AppConfig as BaseEdcDeviceAppConfig
-from edc_device.constants import CENTRAL_SERVER, SERVER
+from edc_device.constants import CENTRAL_SERVER
 from edc_identifier.apps import AppConfig as BaseEdcIdentifierAppConfig
 from edc_lab.apps import AppConfig as BaseEdcLabAppConfig
+from edc_lab_dashboard.apps import AppConfig as BaseEdcLabDashboardAppConfig
 from edc_label.apps import AppConfig as BaseEdcLabelAppConfig
 from edc_metadata.apps import AppConfig as BaseEdcMetadataAppConfig
 from edc_protocol.apps import AppConfig as BaseEdcProtocolAppConfig, SubjectType, Cap
@@ -28,6 +27,8 @@ from edc_timepoint.timepoint import Timepoint
 from edc_visit_tracking.apps import AppConfig as BaseEdcVisitTrackingAppConfig
 from edc_visit_tracking.constants import SCHEDULED, UNSCHEDULED, LOST_VISIT
 
+from cancer_subject.apps import AppConfig as BaseCancerSubjectAppConfig
+
 from .navbars import navbars
 
 
@@ -37,11 +38,13 @@ style = color_style()
 class AppConfig(DjangoAppConfig):
     name = 'cancer'
     base_template_name = 'cancer/base.html'
+    dashboard_url_name = 'home_url'
+    listboard_url_name = 'home_url'
 
 
 class EdcProtocolAppConfig(BaseEdcProtocolAppConfig):
-    protocol = 'BHP099'
-    protocol_number = '099'
+    protocol = 'BHP092'
+    protocol_number = '092'
     protocol_name = 'Cancer'
     protocol_title = ''
     subject_types = [
@@ -57,11 +60,17 @@ class EdcProtocolAppConfig(BaseEdcProtocolAppConfig):
 
     @property
     def site_code(self):
-        return '40'
+        return '45'
 
 
 class CancerSubjectAppConfig(BaseCancerSubjectAppConfig):
     base_template_name = 'cancer/base.html'
+
+
+class EdcLabDashboardAppConfig(BaseEdcLabDashboardAppConfig):
+    base_template_name = 'bcpp/base.html'
+    namespace = 'edc_lab_dashboard'
+    result_model = 'edc_lab_dashboard.result'
 
 
 class EdcLabAppConfig(BaseEdcLabAppConfig):
@@ -72,6 +81,10 @@ class EdcLabAppConfig(BaseEdcLabAppConfig):
     @property
     def study_site_name(self):
         return 'Gaborone'
+
+    @property
+    def site_code(self):
+        return '45'
 
 
 class EdcBaseAppConfig(BaseEdcBaseAppConfig):
@@ -99,7 +112,7 @@ class EdcVisitTrackingAppConfig(BaseEdcVisitTrackingAppConfig):
 
 
 class EdcIdentifierAppConfig(BaseEdcIdentifierAppConfig):
-    identifier_prefix = '099'
+    identifier_prefix = '092'
 
 
 class EdcMetadataAppConfig(BaseEdcMetadataAppConfig):

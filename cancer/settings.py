@@ -43,7 +43,7 @@ SECRET_KEY = config['django'].get('secret_key', 'blah$blah$blah')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cancer-test.bhp.org.bw', 'localhost','127.0.0.1']
+ALLOWED_HOSTS = ['cancer-test.bhp.org.bw', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     'cancer.apps.AppConfig',
     'cancer.apps.EdcBaseAppConfig',
     'cancer.apps.EdcLabAppConfig',
+    #     'cancer.apps.EdcLabDashboardAppConfig',
     'cancer.apps.EdcLabelAppConfig',
     'cancer.apps.EdcMetadataAppConfig',
     'cancer.apps.EdcIdentifierAppConfig',

@@ -1,5 +1,3 @@
-from cancer_screening.admin_site import cancer_screening_admin
-from cancer_subject.admin_site import cancer_subject_admin
 from django.conf.urls import url, include
 from django.contrib import admin
 from edc_appointment.admin_site import edc_appointment_admin
@@ -10,14 +8,17 @@ from edc_metadata.admin_site import edc_metadata_admin
 from edc_registration.admin_site import edc_registration_admin
 from edc_sync.admin import edc_sync_admin
 
+from cancer_screening.admin_site import cancer_screening_admin
+from cancer_subject.admin_site import cancer_subject_admin
+
 from .views import HomeView, AdministrationView
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^admin/', edc_appointment_admin.urls),
-    url(r'^admin/', cancer_subject_admin.urls),
     url(r'^admin', cancer_screening_admin.urls),
+    url(r'^admin/', cancer_subject_admin.urls),
     url(r'^admin/', edc_lab_admin.urls),
     url(r'^admin/', edc_identifier_admin.urls),
     url(r'^admin/', edc_metadata_admin.urls),
@@ -25,10 +26,10 @@ urlpatterns = [
     url(r'^admin/', edc_sync_admin.urls),
     url(r'^admininistration/', AdministrationView.as_view(),
         name='administration_url'),
-    url('subject/',
-        include('cancer_subject.urls')),
-    url('screening/',
+    url('eligibility/',
         include('cancer_screening.urls')),
+    url('consent/',
+        include('cancer_subject.urls')),
     url(r'^appointment/',
         include('edc_appointment.urls')),
     url(r'^edc/', include('edc_base.urls')),

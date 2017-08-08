@@ -8,8 +8,16 @@ from edc_dashboard.view_mixins import AppConfigViewMixin
 
 class HomeView(EdcBaseViewMixin, AppConfigViewMixin, TemplateView):
 
-    app_config_name = 'cancer'
+    name = 'cancer'
+    listboard_template_name = 'cancer/listboard.html'
+    dashboard_template_name = 'cancer/dashboard.html'
+    base_template_name = 'cancer/base.html'
+    listboard_url_name = 'cancer:listboard_url'
+    dashboard_url_name = 'cancer/dashboard_url'
+    admin_site_name = 'cancer_admin'
+    url_namespace = 'cancer'
     template_name = 'cancer/home.html'
+    home_url_name = 'cancer/home.html'
 
     @method_decorator(login_required)
     def dispatch(self, *args, **kwargs):

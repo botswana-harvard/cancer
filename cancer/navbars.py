@@ -4,10 +4,10 @@ from edc_lab_dashboard.navbars import navbar_items as edc_lab_navbar_items
 navbars = {}
 navbar_items = []
 config = [
-    ('cancer_subject', 'subjects', 'fa-user-circle-o', 'listboard_url_name'),
-    ('cancer_screening', 'Screening',
+    ('cancer_screening', 'Eligibility',
      'fa-user-circle-o', 'listboard_url_name'),
-    ('edc_lab', None, 'fa-flask', 'home_url_name')
+    ('cancer_subject', 'subjects', 'fa-user-circle-o', 'listboard_url_name'),
+    ('edc_lab_dashboard', None, 'fa-flask', 'home_url_name')
 ]
 for app_config_name, label, fa_icon, app_config_attr in config:
     navbar_item = NavbarItem(
