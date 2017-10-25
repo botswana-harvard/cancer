@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 import configparser
 import os
-from pathlib import PurePath
 import sys
 
 from django.core.management.color import color_style
@@ -55,6 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'tz_detect',
     'corsheaders',
     'rest_framework',
@@ -82,6 +82,7 @@ INSTALLED_APPS = [
     'cancer.apps.EdcSyncFilesAppConfig',
     'cancer_screening.apps.AppConfig',
     'edc_subject_dashboard.apps.AppConfig',
+    'edc_device.apps.AppConfig',
 
 ]
 
