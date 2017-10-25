@@ -1,9 +1,8 @@
 from datetime import datetime
-from dateutil.relativedelta import MO, TU, WE, TH, FR, SA, SU
-from dateutil.tz import gettz
 import os
 
-from cancer_subject.apps import AppConfig as BaseCancerSubjectAppConfig
+from dateutil.relativedelta import MO, TU, WE, TH, FR, SA, SU
+from dateutil.tz import gettz
 from django.apps import AppConfig as DjangoAppConfig
 from django.conf import settings
 from django.core.management.color import color_style
@@ -27,6 +26,8 @@ from edc_timepoint.apps import AppConfig as BaseEdcTimepointAppConfig
 from edc_timepoint.timepoint import Timepoint
 from edc_visit_tracking.apps import AppConfig as BaseEdcVisitTrackingAppConfig
 from edc_visit_tracking.constants import SCHEDULED, UNSCHEDULED, LOST_VISIT
+
+from cancer_subject.apps import AppConfig as BaseCancerSubjectAppConfig
 
 from .navbars import navbars
 
@@ -94,15 +95,6 @@ class EdcBaseAppConfig(BaseEdcBaseAppConfig):
 
     def get_navbars(self):
         return navbars
-
-
-class EdcConsentAppConfig(BaseEdcConsentAppConfig):
-    pass
-
-
-class EdcDeviceAppConfig(BaseEdcDeviceAppConfig):
-    device_role = CENTRAL_SERVER
-    device_id = '99'
 
 
 class EdcVisitTrackingAppConfig(BaseEdcVisitTrackingAppConfig):

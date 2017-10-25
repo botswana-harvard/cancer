@@ -9,12 +9,12 @@ https://docs.djangoproject.com/en/1.10/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
+import configparser
 import os
+from pathlib import PurePath
 import sys
 
-import configparser
 from django.core.management.color import color_style
-from pathlib import PurePath
 
 
 style = color_style()
@@ -74,8 +74,6 @@ INSTALLED_APPS = [
     'cancer.apps.EdcMetadataAppConfig',
     'cancer.apps.EdcIdentifierAppConfig',
     'cancer.apps.EdcProtocolAppConfig',
-    'cancer.apps.EdcConsentAppConfig',
-    'cancer.apps.EdcDeviceAppConfig',
     'cancer.apps.EdcTimepointAppConfig',
     'cancer.apps.EdcAppointmentAppConfig',
     'cancer.apps.EdcVisitTrackingAppConfig',
@@ -83,7 +81,7 @@ INSTALLED_APPS = [
     'cancer.apps.EdcSyncAppConfig',
     'cancer.apps.EdcSyncFilesAppConfig',
     'cancer_screening.apps.AppConfig',
-#     'cancer_subject_validations.apps.AppConfig'
+    #     'cancer_subject_validations.apps.AppConfig'
 ]
 
 MIDDLEWARE = [
