@@ -226,3 +226,6 @@ REST_FRAMEWORK = {
 }
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+COUNTRY = 'Botswana'
+HOLIDAY_FILE = ''
