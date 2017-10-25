@@ -83,7 +83,7 @@ INSTALLED_APPS = [
     'cancer.apps.EdcSyncAppConfig',
     'cancer.apps.EdcSyncFilesAppConfig',
     'cancer_screening.apps.AppConfig',
-    'cancer_subject_validations.apps.AppConfig'
+#     'cancer_subject_validations.apps.AppConfig'
 ]
 
 MIDDLEWARE = [
