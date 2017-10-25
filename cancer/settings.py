@@ -9,12 +9,12 @@ https://docs.djangoproject.com/en/1.10/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
-import configparser
 import os
-from pathlib import PurePath
 import sys
 
+import configparser
 from django.core.management.color import color_style
+from pathlib import PurePath
 
 
 style = color_style()
@@ -55,12 +55,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms',
     'tz_detect',
     'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
-    'django_js_reverse',
     'django_crypto_fields.apps.AppConfig',
     'django_revision.apps.AppConfig',
     'edc_dashboard.apps.AppConfig',
