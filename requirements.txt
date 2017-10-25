@@ -30,4 +30,6 @@ git+https://github.com/botswana-harvard/edc-facility.git@develop#egg=edc_facilit
 git+https://github.com/botswana-harvard/edc-search.git@develop#egg=edc_search
 git+https://github.com/erikvw/django-simple-history.git@develop#egg=django_simple_history
 git+https://github.com/botswana-harvard/edc-metadata-rules.git@develop#egg=edc_metadata_rules
+git+https://github.com/botswana-harvard/edc-model-wrapper.git@develop#egg=edc_model_wrapper
+git+https://github.com/botswana-harvard/edc-subject-dashboard.git@develop#egg=edc_subject_dashboard
 
