@@ -70,7 +70,7 @@ INSTALLED_APPS = [
     'cancer.apps.AppConfig',
     'cancer.apps.EdcBaseAppConfig',
     'cancer.apps.EdcLabAppConfig',
-    #     'cancer.apps.EdcLabDashboardAppConfig',
+    'cancer_dashboard.apps.AppConfig',
     'cancer.apps.EdcLabelAppConfig',
     'cancer.apps.EdcMetadataAppConfig',
     'cancer.apps.EdcIdentifierAppConfig',
