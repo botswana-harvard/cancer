@@ -1,14 +1,17 @@
+from django.apps import apps as django_apps
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.views.generic import TemplateView
-
 from edc_base.view_mixins import EdcBaseViewMixin
 from edc_dashboard.view_mixins import AppConfigViewMixin
 
 
+cancer_dashboard_app_config = django_apps.get_app_config('cancer_dashboard')
+
+
 class HomeView(EdcBaseViewMixin, AppConfigViewMixin, TemplateView):
 
-    name = 'cancer'
+    name = 'home'
     listboard_template_name = 'cancer/listboard.html'
     dashboard_template_name = 'cancer/dashboard.html'
     base_template_name = 'cancer/base.html'
@@ -25,5 +28,7 @@ class HomeView(EdcBaseViewMixin, AppConfigViewMixin, TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context.update(navbar_item_selected='home')
+        context.update(
+            listboard_url_name=cancer_dashboard_app_config.screening_listboard_url_name,
+            navbar_item_selected='home')
         return context
