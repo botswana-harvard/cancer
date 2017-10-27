@@ -4,7 +4,7 @@ from edc_lab_dashboard.navbars import navbar_items as edc_lab_navbar_items
 navbars = {}
 navbar_items = []
 config = [
-    ('cancer_dashboard', 'Eligibility',
+    ('cancer_dashboard', 'Screening',
      'fa-user-circle-o', 'listboard_url_name'),
     #     ('cancer_subject', 'subjects', 'fa-user-circle-o', 'listboard_url_name')
 ]
