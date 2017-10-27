@@ -83,7 +83,6 @@ INSTALLED_APPS = [
     'edc_subject_dashboard.apps.AppConfig',
     'edc_device.apps.AppConfig',
     'edc_consent.apps.AppConfig',
-
 ]
 
 MIDDLEWARE = [
