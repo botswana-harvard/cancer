@@ -62,14 +62,13 @@ INSTALLED_APPS = [
     'django_crypto_fields.apps.AppConfig',
     'django_revision.apps.AppConfig',
     'edc_dashboard.apps.AppConfig',
-    'edc_lab_dashboard.apps.AppConfig',
+    #     'edc_lab_dashboard.apps.AppConfig',
     'edc_registration.apps.AppConfig',
     'edc_visit_schedule.apps.AppConfig',
     'edc_base_test.apps.AppConfig',
     'edc_reference.apps.AppConfig',
     'cancer.apps.AppConfig',
     'cancer.apps.EdcBaseAppConfig',
-    'cancer.apps.EdcLabAppConfig',
     'cancer_dashboard.apps.AppConfig',
     'cancer.apps.EdcLabelAppConfig',
     'cancer.apps.EdcMetadataAppConfig',
@@ -83,6 +82,7 @@ INSTALLED_APPS = [
     'cancer.apps.EdcSyncFilesAppConfig',
     'edc_subject_dashboard.apps.AppConfig',
     'edc_device.apps.AppConfig',
+    'edc_consent.apps.AppConfig',
 
 ]
 
