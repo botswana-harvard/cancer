@@ -5,7 +5,6 @@ from edc_identifier.admin_site import edc_identifier_admin
 from edc_lab.admin_site import edc_lab_admin
 from edc_registration.admin_site import edc_registration_admin
 
-from cancer_screening.admin_site import cancer_screening_admin
 from cancer_subject.admin_site import cancer_subject_admin
 from edc_appointment.admin_site import edc_appointment_admin
 from edc_metadata.admin_site import edc_metadata_admin
