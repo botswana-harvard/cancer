@@ -29,6 +29,6 @@ class HomeView(EdcBaseViewMixin, AppConfigViewMixin, TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context.update(
-            listboard_url_name=cancer_dashboard_app_config.screening_listboard_url_name,
+            listboard_url_name=cancer_dashboard_app_config.listboard_url_name,
             navbar_item_selected='home')
         return context

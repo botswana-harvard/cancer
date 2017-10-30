@@ -32,4 +32,7 @@ git+https://github.com/erikvw/django-simple-history.git@develop#egg=django_simpl
 git+https://github.com/botswana-harvard/edc-metadata-rules.git@develop#egg=edc_metadata_rules
 git+https://github.com/botswana-harvard/edc-model-wrapper.git@develop#egg=edc_model_wrapper
 git+https://github.com/botswana-harvard/edc-subject-dashboard.git@develop#egg=edc_subject_dashboard
+git+https://github.com/botswana-harvard/cancer-dashboard.git@develop#egg=cancer_dashboard
+git+https://github.com/botswana-harvard/cancer-subject-validations.git@develop#egg=cancer_subject_validations
+
 
