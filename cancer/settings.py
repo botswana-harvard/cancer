@@ -83,6 +83,8 @@ INSTALLED_APPS = [
     'edc_subject_dashboard.apps.AppConfig',
     'edc_device.apps.AppConfig',
     'edc_consent.apps.AppConfig',
+    'cancer_visit_schedule.apps.AppConfig',
+    'edc_facility.apps.AppConfig',
 ]
 
 MIDDLEWARE = [
@@ -214,7 +216,6 @@ DEVICE_ROLE = config['edc_device'].get('role', 'CentralServer')
 LABEL_PRINTER = config['edc_label'].get('label_printer', 'label_printer')
 
 EDC_LAB_REQUISITION_MODEL = 'cancer_subject.subjectrequisition'
-
 CORS_ORIGIN_ALLOW_ALL = True
 
 REST_FRAMEWORK = {
@@ -229,5 +230,5 @@ REST_FRAMEWORK = {
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
-COUNTRY = 'Botswana'
-HOLIDAY_FILE = ''
+COUNTRY = 'botswana'
+HOLIDAY_FILE = os.path.join(BASE_DIR, APP_NAME, 'holidays.csv')

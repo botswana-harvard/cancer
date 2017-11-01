@@ -11,22 +11,23 @@ from edc_base.utils import get_utcnow
 from edc_constants.constants import FAILED_ELIGIBILITY
 from edc_device.apps import AppConfig as BaseEdcDeviceAppConfig
 from edc_device.constants import CENTRAL_SERVER
-from edc_facility.facility import Facility
 from edc_identifier.apps import AppConfig as BaseEdcIdentifierAppConfig
 from edc_lab.apps import AppConfig as BaseEdcLabAppConfig
 from edc_lab_dashboard.apps import AppConfig as BaseEdcLabDashboardAppConfig
 from edc_label.apps import AppConfig as BaseEdcLabelAppConfig
 from edc_protocol.apps import AppConfig as BaseEdcProtocolAppConfig, SubjectType, Cap
 from edc_sync_files.apps import AppConfig as BaseEdcSyncFilesAppConfig
-from edc_timepoint.apps import AppConfig as BaseEdcTimepointAppConfig
-from edc_timepoint.timepoint import Timepoint
 from edc_visit_tracking.apps import AppConfig as BaseEdcVisitTrackingAppConfig
 from edc_visit_tracking.constants import SCHEDULED, UNSCHEDULED, LOST_VISIT
 
 from cancer_subject.apps import AppConfig as BaseCancerSubjectAppConfig
+from edc_appointment.appointment_config import AppointmentConfig
 from edc_appointment.apps import AppConfig as BaseEdcAppointmentAppConfig
+from edc_facility.facility import Facility
 from edc_metadata.apps import AppConfig as BaseEdcMetadataAppConfig
 from edc_sync.apps import AppConfig as BaseEdcSyncAppConfig
+from edc_timepoint.apps import AppConfig as BaseEdcTimepointAppConfig
+from edc_timepoint.timepoint import Timepoint
 
 from .navbars import navbars
 
@@ -112,6 +113,11 @@ class EdcMetadataAppConfig(BaseEdcMetadataAppConfig):
 class EdcAppointmentAppConfig(BaseEdcAppointmentAppConfig):
     app_label = 'cancer_subject'
     default_appt_type = 'home'
+    configurations = [
+        AppointmentConfig(
+            model='cancer_subject.appointment',
+            related_visit_model='cancer_subject.subjectvisit')
+    ]
     facilities = {
         'clinic': Facility(
             name='clinic', days=[MO, TU, WE, TH, FR, SA, SU],
