@@ -5,11 +5,12 @@ db.sqlite3
 etc/
 # Byte-compiled / optimized / DLL files
 __pycache__/
+cancer/views/__pycache__/
 *.py[cod]
 *.ini
 # C extensions
 *.so
-
+*.pyc
 # Distribution / packaging
 .Python
 env/

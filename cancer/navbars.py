@@ -1,20 +1,19 @@
-from edc_base import NavbarItem
-from edc_lab_dashboard.navbars import navbar_items as edc_lab_navbar_items
+from edc_navbar import NavbarItem, site_navbars, Navbar
 
-navbars = {}
-navbar_items = []
-config = [
-    ('cancer_dashboard', 'Consents', None, 'listboard_url_name'),
-    ('cancer_dashboard', 'Checklist',
-     'fa-user-circle-o', 'checklist_listboard_url_name'),
-]
-for app_config_name, label, fa_icon, app_config_attr in config:
-    navbar_item = NavbarItem(
-        app_config_name=app_config_name,
-        label=label,
-        fa_icon=fa_icon,
-        app_config_attr=app_config_attr)
-    navbar_items.append(navbar_item)
-navbars.update(default=navbar_items)
+cancer = Navbar(name='cancer')
 
-navbars.update(specimens=edc_lab_navbar_items)
+cancer.append_item(
+    NavbarItem(
+        name='consented_subject',
+        label='Consents',
+        fa_icon='fa-user-plus',
+        url_name='cancer_dashboard:consent_listboard_url'))
+
+cancer.append_item(
+    NavbarItem(
+        name='enrollment_checklist',
+        label='Enrollment Checklist',
+        fa_icon='fa-user-circle-o',
+        url_name='cancer_dashboard:checklist_listboard_url'))
+
+site_navbars.register(cancer)
