@@ -6,6 +6,7 @@ from dateutil.tz import gettz
 from django.apps import AppConfig as DjangoAppConfig
 from django.conf import settings
 from django.core.management.color import color_style
+
 from edc_base.apps import AppConfig as BaseEdcBaseAppConfig
 from edc_base.utils import get_utcnow
 from edc_constants.constants import FAILED_ELIGIBILITY
@@ -15,7 +16,7 @@ from edc_identifier.apps import AppConfig as BaseEdcIdentifierAppConfig
 from edc_lab.apps import AppConfig as BaseEdcLabAppConfig
 from edc_lab_dashboard.apps import AppConfig as BaseEdcLabDashboardAppConfig
 from edc_label.apps import AppConfig as BaseEdcLabelAppConfig
-from edc_protocol.apps import AppConfig as BaseEdcProtocolAppConfig, SubjectType, Cap
+from edc_protocol.apps import AppConfig as BaseEdcProtocolAppConfig
 from edc_sync_files.apps import AppConfig as BaseEdcSyncFilesAppConfig
 
 from cancer_subject.apps import AppConfig as BaseCancerSubjectAppConfig
