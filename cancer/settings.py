@@ -210,8 +210,11 @@ MEDIA_ROOT = config['django'].get(
     'media_root', os.path.join(BASE_DIR, 'media'))
 MEDIA_URL = '/media/'
 
+if DEBUG:
+    KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
+else:
+    KEY_PATH = config['django_crypto_fields'].get('key_path')
 
-KEY_PATH = config['django_crypto_fields'].get('key_path')
 GIT_DIR = BASE_DIR
 DEVICE_ID = config['edc_device'].get('device_id', '99')
 DEVICE_ROLE = config['edc_device'].get('role', 'CentralServer')
