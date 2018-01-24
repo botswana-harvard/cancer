@@ -40,7 +40,7 @@ config.read(os.path.join(CONFIG_PATH))
 SECRET_KEY = config['django'].get('secret_key', 'blah$blah$blah')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['cancer-test.bhp.org.bw', 'localhost', '127.0.0.1']
 
@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'crispy_forms',
     'tz_detect',
     'corsheaders',
@@ -86,6 +87,7 @@ INSTALLED_APPS = [
     'edc_consent.apps.AppConfig',
     'cancer_visit_schedule.apps.AppConfig',
     'edc_facility.apps.AppConfig',
+    'edc_lab.apps.AppConfig',
     'cancer_reference.apps.AppConfig',
 ]
 
@@ -97,6 +99,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'edc_dashboard.middleware.DashboardMiddleware',
+    'edc_lab_dashboard.middleware.DashboardMiddleware',
+    'edc_subject_dashboard.middleware.DashboardMiddleware',
 ]
 
 ROOT_URLCONF = 'cancer.urls'
@@ -237,3 +242,19 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 COUNTRY = 'botswana'
 HOLIDAY_FILE = os.path.join(BASE_DIR, APP_NAME, 'holidays.csv')
+
+EDC_SYNC_FILES_USER = None
+EDC_SYNC_FILES_USER = None
+EDC_SYNC_FILES_REMOTE_HOST = None
+EDC_SYNC_FILES_REMOTE_HOST = None
+EDC_SYNC_FILES_USB_VOLUME = None
+EDC_SYNC_SERVER_IP = None
+
+DASHBOARD_URL_NAMES = {
+    'consent_listboard_url': 'cancer_dashboard:consent_listboard_url',
+    'checklist_listboard_url': 'cancer_dashboard:checklist_listboard_url',
+    'subject_dashboard_url': 'cancer_dashboard:subject_dashboard_url',
+}
+
+SITE_ID = 1
+REVIEWER_SITE_ID = 1

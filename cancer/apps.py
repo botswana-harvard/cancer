@@ -30,9 +30,6 @@ from edc_timepoint.timepoint import Timepoint
 from edc_visit_tracking.apps import AppConfig as BaseEdcVisitTrackingAppConfig
 from edc_visit_tracking.constants import SCHEDULED, UNSCHEDULED, LOST_VISIT
 
-from .navbars import navbars
-
-
 style = color_style()
 
 
@@ -48,20 +45,10 @@ class EdcProtocolAppConfig(BaseEdcProtocolAppConfig):
     protocol_number = '045'
     protocol_name = 'Cancer'
     protocol_title = ''
-    subject_types = [
-        SubjectType('subject', 'Research Subject',
-                    Cap(model_name='cancer_subject.subjectconsent', max_subjects=9999)),
-    ]
+    site_code = '45'
+    site_name = 'Gaborone'
     study_open_datetime = datetime(2013, 10, 31, 0, 0, 0, tzinfo=gettz('UTC'))
     study_close_datetime = datetime(2022, 12, 31, 0, 0, 0, tzinfo=gettz('UTC'))
-
-    @property
-    def site_name(self):
-        return 'Gaborone'
-
-    @property
-    def site_code(self):
-        return '45'
 
 
 class CancerSubjectAppConfig(BaseCancerSubjectAppConfig):
@@ -93,7 +80,6 @@ class EdcBaseAppConfig(BaseEdcBaseAppConfig):
     institution = 'Botswana-Harvard AIDS Institute'
     copyright = '2017-{}'.format(get_utcnow().year)
     license = None
-    navbars = navbars
 
 
 class EdcVisitTrackingAppConfig(BaseEdcVisitTrackingAppConfig):
@@ -112,17 +98,11 @@ class EdcMetadataAppConfig(BaseEdcMetadataAppConfig):
 
 
 class EdcAppointmentAppConfig(BaseEdcAppointmentAppConfig):
-    app_label = 'cancer_subject'
-    default_appt_type = 'home'
     configurations = [
         AppointmentConfig(
-            model='cancer_subject.appointment',
-            related_visit_model='cancer_subject.subjectvisit')
-    ]
-    facilities = {
-        'clinic': Facility(
-            name='clinic', days=[MO, TU, WE, TH, FR, SA, SU],
-            slots=[99999, 99999, 99999, 99999, 99999, 99999, 99999])}
+            model='edc_appointment.appointment',
+            related_visit_model='ambition_subject.subjectvisit',
+            appt_type='hospital')]
 
 
 class EdcTimepointAppConfig(BaseEdcTimepointAppConfig):
