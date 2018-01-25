@@ -40,7 +40,7 @@ config.read(os.path.join(CONFIG_PATH))
 SECRET_KEY = config['django'].get('secret_key', 'blah$blah$blah')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['cancer-test.bhp.org.bw', 'localhost', '127.0.0.1']
 
@@ -215,10 +215,10 @@ MEDIA_ROOT = config['django'].get(
     'media_root', os.path.join(BASE_DIR, 'media'))
 MEDIA_URL = '/media/'
 
-if DEBUG:
-    KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
-else:
-    KEY_PATH = config['django_crypto_fields'].get('key_path')
+# if DEBUG:
+#     KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
+# else:
+#     KEY_PATH = config['django_crypto_fields'].get('key_path')
 
 GIT_DIR = BASE_DIR
 DEVICE_ID = config['edc_device'].get('device_id', '99')
