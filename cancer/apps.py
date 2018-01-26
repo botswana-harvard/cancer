@@ -22,7 +22,7 @@ from edc_sync_files.apps import AppConfig as BaseEdcSyncFilesAppConfig
 from cancer_subject.apps import AppConfig as BaseCancerSubjectAppConfig
 from edc_appointment.appointment_config import AppointmentConfig
 from edc_appointment.apps import AppConfig as BaseEdcAppointmentAppConfig
-from edc_facility.facility import Facility
+from edc_facility.apps import AppConfig as BaseEdcFacilityAppConfig
 from edc_metadata.apps import AppConfig as BaseEdcMetadataAppConfig
 from edc_sync.apps import AppConfig as BaseEdcSyncAppConfig
 from edc_timepoint.apps import AppConfig as BaseEdcTimepointAppConfig
@@ -135,3 +135,12 @@ class EdcLabelAppConfig(BaseEdcLabelAppConfig):
 class EdcSyncFilesAppConfig(BaseEdcSyncFilesAppConfig):
     edc_sync_files_using = True
     role = CENTRAL_SERVER
+
+
+class EdcFacilityAppConfig(BaseEdcFacilityAppConfig):
+    country = 'botswana'
+    definitions = {
+        '7-day clinic': dict(days=[MO, TU, WE, TH, FR, SA, SU],
+                             slots=[100, 100, 100, 100, 100, 100, 100]),
+        '5-day clinic': dict(days=[MO, TU, WE, TH, FR],
+                             slots=[100, 100, 100, 100, 100])}
