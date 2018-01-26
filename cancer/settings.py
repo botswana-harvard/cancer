@@ -86,7 +86,7 @@ INSTALLED_APPS = [
     'edc_navbar.apps.AppConfig',
     'edc_consent.apps.AppConfig',
     'cancer_visit_schedule.apps.AppConfig',
-    'edc_facility.apps.AppConfig',
+    #     'edc_facility.apps.AppConfig',
     'edc_lab.apps.AppConfig',
     'cancer_reference.apps.AppConfig',
 ]
