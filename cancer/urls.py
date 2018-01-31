@@ -7,7 +7,7 @@ from edc_registration.admin_site import edc_registration_admin
 
 from cancer_subject.admin_site import cancer_subject_admin
 from edc_appointment.admin_site import edc_appointment_admin
-from edc_base.views import LogoutView, LoginView
+from edc_base.auth.views import LogoutView, LoginView
 from edc_metadata.admin_site import edc_metadata_admin
 from edc_sync.admin import edc_sync_admin
 
